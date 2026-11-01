@@ -1198,9 +1198,254 @@
       }).join('');
     }
 
-    // ---------------- UNIVERSAL AD REWARDED TIMING LOGIC ----------------
-    let adInterval = null;
-    let pendingAction = null;
+    // ---------------- EXHAUSTIVE REAL STUDY MATERIAL LIBRARY ----------------
+    let readerCurrentLang = 'hi';
+    let currentActiveStudyItem = null;
+
+    const COMPREHENSIVE_STUDY_VAULT = {
+      "CTET 2026": {
+        title_hi: "CTET 2026 बाल विकास एवं शिक्षाशास्त्र (CDP) सम्पूर्ण मास्टर नोट्स",
+        title_en: "CTET 2026 Child Development & Pedagogy (CDP) Complete Master Notes",
+        body_hi: `
+          <div class="space-y-6">
+            <div class="bg-gradient-to-r from-amber-950/40 to-slate-900 border border-amber-500/30 p-4 rounded-2xl">
+              <span class="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-graduation-cap"></i> CTET Paper-1 व Paper-2 स्पेशल थ्योरी + PYQs
+              </span>
+              <p class="text-xs text-slate-300 mt-1">पियाजे, वाइगोत्सकी, कोहलबर्ग, NCF 2005 और NEP 2020 के सभी अनिवार्य कॉन्सेप्ट्स।</p>
+            </div>
+
+            <!-- Theory 1: Jean Piaget -->
+            <div class="space-y-3">
+              <h4 class="text-base sm:text-lg font-bold text-amber-400 border-b border-slate-800 pb-2">
+                1. जीन पियाजे का संज्ञानात्मक विकास सिद्धांत (Cognitive Development)
+              </h4>
+              <p class="text-xs sm:text-sm text-slate-300">पियाजे के अनुसार बच्चा 'नन्हा वैज्ञानिक' (Little Scientist) है जो सक्रिय रूप से ज्ञान का निर्माण करता है। विकास की 4 अवस्थाएं:</p>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-1">
+                  <span class="text-amber-400 font-bold">1. संवेदी-गामक अवस्था (0-2 वर्ष):</span>
+                  <p class="text-slate-400">• ज्ञानेंद्रियों द्वारा सीखना।<br>• <strong>वस्तु स्थायित्व (Object Permanence):</strong> 8-9 महीने में आता है।</p>
+                </div>
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-1">
+                  <span class="text-amber-400 font-bold">2. पूर्व-संक्रियात्मक (2-7 वर्ष):</span>
+                  <p class="text-slate-400">• प्रतीकात्मक खेल (Symbolic Play)।<br>• <strong>अहमकेंद्रितता (Egocentrism)</strong> व जीववाद (Animism)।</p>
+                </div>
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-1">
+                  <span class="text-amber-400 font-bold">3. मूर्त संक्रियात्मक (7-11 वर्ष):</span>
+                  <p class="text-slate-400">• मूर्त वस्तुओं पर तार्किक चिंतन।<br>• <strong>संरक्षण (Conservation)</strong> व पलटावी (Reversibility) क्षमता।</p>
+                </div>
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-1">
+                  <span class="text-amber-400 font-bold">4. अमूर्त / औपचारिक (11+ वर्ष):</span>
+                  <p class="text-slate-400">• परिकल्पनात्मक-निगमनात्मक तर्क (Hypothetical Reasoning)।<br>• अमूर्त सोच का विकास।</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Theory 2: Lev Vygotsky -->
+            <div class="space-y-3">
+              <h4 class="text-base sm:text-lg font-bold text-blue-400 border-b border-slate-800 pb-2">
+                2. लेव वाइगोत्सकी का सामाजिक-सांस्कृतिक सिद्धांत (Socio-Cultural Theory)
+              </h4>
+              <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2 text-xs sm:text-sm">
+                <div>• <strong>ZPD (समीपस्थ विकास का क्षेत्र):</strong> बालक जो स्वयं कर सकता है और जो बड़ों की मदद से कर सकता है, उसके बीच का अंतर।</div>
+                <div>• <strong>पाड़ / ढांचा (Scaffolding):</strong> समस्या समाधान के दौरान दी जाने वाली अस्थायी सहायता (Temporary Support/Hint)।</div>
+                <div>• <strong>निजी वार्ता (Private Speech):</strong> बालक अपने कार्यों को निर्देशित करने के लिए स्वयं से बातें करता है।</div>
+              </div>
+            </div>
+
+            <!-- Solved PYQ Questions -->
+            <div class="space-y-3">
+              <h4 class="text-base sm:text-lg font-bold text-emerald-400 border-b border-slate-800 pb-2">
+                3. परीक्षा में बार-बार पूछे गए सॉल्व्ड प्रश्न (CTET PYQs)
+              </h4>
+              
+              <div class="p-3.5 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs">
+                <span class="text-amber-400 font-bold">प्रश्न 1: एक 5 वर्ष की बच्ची टी-शर्ट को मोड़ते हुए अपने आप से बात करती है। पियाजे और वाइगोत्सकी इसे क्या कहेंगे?</span>
+                <p class="text-slate-300"><strong>सॉल्यूशन:</strong> पियाजे इसे 'अहमकेंद्रित वार्ता' (Egocentric Speech) कहेंगे, जबकि वाइगोत्सकी इसे बच्ची द्वारा अपने कार्य को योजनाबद्ध करने के लिए 'निजी वार्ता' (Private Speech) कहेंगे।</p>
+              </div>
+
+              <div class="p-3.5 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs">
+                <span class="text-amber-400 font-bold">प्रश्न 2: कोहलबर्ग के किस स्तर पर बालक का नैतिक तर्क 'नियम और व्यवस्था' (Law & Order) पर आधारित होता है?</span>
+                <p class="text-slate-300"><strong>सॉल्यूशन:</strong> स्तर-2 (पारंपरिक स्तर / Conventional Level) के चरण-4 पर, जहां बालक मानता है कि समाज के नियमों का पालन करना अनिवार्य है।</p>
+              </div>
+            </div>
+          </div>
+        `,
+        body_en: `
+          <div class="space-y-6">
+            <div class="bg-gradient-to-r from-amber-950/40 to-slate-900 border border-amber-500/30 p-4 rounded-2xl">
+              <span class="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-graduation-cap"></i> CTET Paper-1 &amp; Paper-2 Master Pedagogy Notes
+              </span>
+              <p class="text-xs text-slate-300 mt-1">Core concepts of Piaget, Vygotsky, Kohlberg, NCF 2005 &amp; NEP 2020.</p>
+            </div>
+
+            <div class="space-y-3">
+              <h4 class="text-base sm:text-lg font-bold text-amber-400 border-b border-slate-800 pb-2">
+                1. Jean Piaget's 4 Stages of Cognitive Development
+              </h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-1">
+                  <span class="text-amber-400 font-bold">1. Sensorimotor (0-2 Yrs):</span>
+                  <p class="text-slate-400">• Learning through senses.<br>• <strong>Object Permanence</strong> emerges around 8-9 months.</p>
+                </div>
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-1">
+                  <span class="text-amber-400 font-bold">2. Pre-operational (2-7 Yrs):</span>
+                  <p class="text-slate-400">• Symbolic play.<br>• Dominated by <strong>Egocentrism</strong> &amp; Animism.</p>
+                </div>
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-1">
+                  <span class="text-amber-400 font-bold">3. Concrete Operational (7-11 Yrs):</span>
+                  <p class="text-slate-400">• Logical thought on tangible objects.<br>• Mastered <strong>Conservation</strong> &amp; Reversibility.</p>
+                </div>
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-1">
+                  <span class="text-amber-400 font-bold">4. Formal Operational (11+ Yrs):</span>
+                  <p class="text-slate-400">• Hypothetical-deductive reasoning.<br>• Abstract propositional logic.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <h4 class="text-base sm:text-lg font-bold text-blue-400 border-b border-slate-800 pb-2">
+                2. Lev Vygotsky: Scaffolding, ZPD &amp; Private Speech
+              </h4>
+              <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2 text-xs sm:text-sm">
+                <div>• <strong>ZPD (Zone of Proximal Development):</strong> Distance between actual developmental level and potential development under adult guidance.</div>
+                <div>• <strong>Scaffolding:</strong> Temporary pedagogical hints/cues provided by MKO (More Knowledgeable Other).</div>
+                <div>• <strong>Private Speech:</strong> Self-directed vocal speech used by children to regulate self-behavior.</div>
+              </div>
+            </div>
+          </div>
+        `
+      },
+
+      "10th Board": {
+        title_hi: "कक्षा 10वीं बोर्ड परीक्षा: गणित व विज्ञान सम्पूर्ण सॉल्व्ड मॉडल पेपर 2026",
+        title_en: "Class 10th Board Exam: Mathematics & Science Complete Solved Model Paper 2026",
+        body_hi: `
+          <div class="space-y-6">
+            <div class="bg-gradient-to-r from-emerald-950/40 to-slate-900 border border-emerald-500/30 p-4 rounded-2xl">
+              <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-square-root-variable"></i> बोर्ड परीक्षा 100% स्कोरिंग ब्लूप्रिंट
+              </span>
+              <p class="text-xs text-slate-300 mt-1">CBSE व सभी स्टेट बोर्ड्स (UP, Bihar, Maharashtra, Gujarat, TN) के स्टेप-वाइज सॉल्व्ड प्रश्न।</p>
+            </div>
+
+            <!-- SECTION A: QUADRATIC & REAL NUMBERS -->
+            <div class="space-y-3">
+              <h4 class="text-base sm:text-lg font-bold text-emerald-400 border-b border-slate-800 pb-2">
+                खंड (क): वास्तविक संख्याएं व द्विघात समीकरण (Step Solutions)
+              </h4>
+              
+              <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs sm:text-sm">
+                <strong class="text-amber-400">सिद्ध कीजिए कि √5 एक अपरिमेय संख्या है (Board 4 Marks):</strong>
+                <p class="text-slate-300 leading-relaxed font-mono">
+                  उपपत्ति:<br>
+                  माना √5 एक परिमेय संख्या है। अतः √5 = a/b, जहां a और b सह-अभाज्य पूर्णांक हैं (b ≠ 0)।<br>
+                  दोनों पक्षों का वर्ग करने पर: 5 = a²/b² ⇒ 5b² = a²<br>
+                  चूंकि 5, a² को विभाजित करता है, इसलिए 5, a को भी विभाजित करेगा।<br>
+                  माना a = 5c, तो 5b² = (5c)² = 25c² ⇒ b² = 5c²<br>
+                  अतः 5, b को भी विभाजित करेगा।<br>
+                  यह इस तथ्य का विरोध करता है कि a और b सह-अभाज्य हैं।<br>
+                  अतः हमारी कल्पना गलत है, इसलिए <strong>√5 एक अपरिमेय संख्या है। (इति सिद्धम्)</strong>
+                </p>
+              </div>
+
+              <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs sm:text-sm">
+                <strong class="text-amber-400">द्विघात सूत्र (Quadratic Formula Shortcuts):</strong>
+                <div class="bg-slate-900 p-3 rounded-lg font-mono text-xs text-emerald-300">
+                  समीकरण: ax² + bx + c = 0<br>
+                  विविक्तकर (Discriminant): D = b² - 4ac<br>
+                  • D > 0: दो भिन्न वास्तविक मूल (Real & Distinct roots)<br>
+                  • D = 0: दो बराबर वास्तविक मूल (Equal roots, x = -b/2a)<br>
+                  • D < 0: कोई वास्तविक मूल नहीं (Imaginary roots)
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION B: TRIGONOMETRY -->
+            <div class="space-y-3">
+              <h4 class="text-base sm:text-lg font-bold text-blue-400 border-b border-slate-800 pb-2">
+                खंड (ख): त्रिकोणमिति की सर्वसमिकाएं (Trigonometry Identities)
+              </h4>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 font-mono text-xs">
+                <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800 text-amber-300">sin²θ + cos²θ = 1</div>
+                <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800 text-amber-300">1 + tan²θ = sec²θ</div>
+                <div class="p-2.5 bg-slate-950 rounded-lg border border-slate-800 text-amber-300">1 + cot²θ = cosec²θ</div>
+              </div>
+            </div>
+          </div>
+        `,
+        body_en: `
+          <div class="space-y-6">
+            <div class="bg-gradient-to-r from-emerald-950/40 to-slate-900 border border-emerald-500/30 p-4 rounded-2xl">
+              <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-square-root-variable"></i> Board Exam 100% Scoring Blueprint
+              </span>
+              <p class="text-xs text-slate-300 mt-1">Full step-by-step solved problems for CBSE and All State Boards.</p>
+            </div>
+
+            <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs sm:text-sm font-mono">
+              <strong class="text-amber-400">Prove that √5 is an irrational number (Standard Board Proof):</strong>
+              <p class="text-slate-300 leading-relaxed">
+                Let √5 be rational. Hence √5 = a/b where a and b are co-prime integers and b ≠ 0.<br>
+                Squaring both sides: 5 = a²/b² ⇒ a² = 5b².<br>
+                Thus 5 divides a², which implies 5 divides a.<br>
+                Let a = 5c. Then 25c² = 5b² ⇒ b² = 5c².<br>
+                Thus 5 divides b. This contradicts our assumption that a and b are co-prime.<br>
+                <strong>Hence, √5 is irrational. (Q.E.D.)</strong>
+              </p>
+            </div>
+          </div>
+        `
+      },
+
+      "Diploma Civil": {
+        title_hi: "डिप्लोमा सिविल इंजीनियरिंग (SOM & Surveying) मास्टर फॉर्मूला नोट्स",
+        title_en: "Diploma Civil Engineering: SOM & Surveying Complete Formula Book",
+        body_hi: `
+          <div class="space-y-6">
+            <div class="bg-gradient-to-r from-cyan-950/40 to-slate-900 border border-cyan-500/30 p-4 rounded-2xl">
+              <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">
+                <i class="fa-solid fa-trowel-bricks"></i> SSC JE &amp; State PWD/Irrigation स्पेशल
+              </span>
+              <h3 class="text-base font-bold text-white mt-1">स्ट्रेंथ ऑफ मैटेरियल्स (SOM) व सर्वेइंग फॉर्मूले</h3>
+            </div>
+
+            <div class="space-y-3">
+              <h4 class="text-sm font-bold text-amber-400">1. बेंडिंग समीकरण (Bending Equation):</h4>
+              <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-mono text-sm text-cyan-300">
+                M / I = σ / y = E / R
+              </div>
+              <p class="text-xs text-slate-400">• M = Bending Moment, I = Moment of Inertia, σ = Bending Stress, y = Neutral Axis से दूरी, E = Modulus of Elasticity, R = Radius of Curvature.</p>
+            </div>
+
+            <div class="space-y-3">
+              <h4 class="text-sm font-bold text-blue-400">2. कैंटिलीवर व सिंपली सपोर्टेड बीम के अधिकतम मान:</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono">
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
+                  <strong class="text-white block mb-1">SSB with UDL (w per unit length):</strong>
+                  • Max BM = wL² / 8 (केंद्र पर)<br>
+                  • Max Deflection = 5wL⁴ / 384EI
+                </div>
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
+                  <strong class="text-white block mb-1">Cantilever with Point Load (W at free end):</strong>
+                  • Max BM = W × L (फिक्स सपोर्ट पर)<br>
+                  • Max Deflection = WL³ / 3EI
+                </div>
+              </div>
+            </div>
+          </div>
+        `,
+        body_en: `
+          <div class="space-y-4 font-mono text-xs">
+            <h4 class="text-cyan-400 text-sm font-bold">Pure Bending Theory &amp; Deflection Benchmarks:</h4>
+            <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-amber-300">M/I = σ/y = E/R</div>
+            <p class="text-slate-300">Crucial for SSC JE, RRB JE Civil technical sections.</p>
+          </div>
+        `
+      }
+    };
 
     function triggerUniversalAdFlow(actionType, title) {
       pendingAction = { actionType, title };
@@ -1229,7 +1474,7 @@
           timer.innerText = "Done!";
           btn.disabled = false;
           btn.className = "w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs cursor-pointer shadow-lg shadow-emerald-600/20";
-          btn.innerHTML = "Ad Finished - View Full Content";
+          btn.innerHTML = "Ad Finished - Open Full Notes";
           btn.onclick = finishAdAndProceed;
         }
       }, 1000);
@@ -1241,18 +1486,29 @@
     }
 
     function openSecureReader(title) {
+      currentActiveStudyItem = title;
+      readerCurrentLang = globalLang;
+
+      let key = "10th Board";
+      if (title.includes("CTET") || title.includes("TET") || title.includes("KVS") || title.includes("NET")) {
+        key = "CTET 2026";
+      } else if (title.includes("Civil") || title.includes("SOM") || title.includes("RCC")) {
+        key = "Diploma Civil";
+      } else if (title.includes("10") || title.includes("12") || title.includes("Board") || title.includes("Class")) {
+        key = "10th Board";
+      }
+
+      const vaultData = COMPREHENSIVE_STUDY_VAULT[key];
+
       document.getElementById('sr-title').innerText = title;
-      document.getElementById('sr-body').innerHTML = `
-        <h4 class="text-lg font-bold text-blue-400">Master Notes &amp; Formula Compendium</h4>
-        <p>This study material is protected. Enjoy online interactive reading with formula tables and solved past year questions.</p>
-        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs font-mono text-amber-300 my-3">
-          ⭐ [HIGH YIELD CLOUD FACT]: Direct question pattern tested repeatedly in CTET, SSC JE, Board exams, and State PSCs.
-        </div>
-        <p class="text-xs text-slate-300 leading-relaxed">
-          Comprehensive step-by-step concepts, blueprints, and answer keys synthesized directly from the official state syllabus.
-        </p>
-      `;
+      document.getElementById('sr-body').innerHTML = (readerCurrentLang === 'hi') ? vaultData.body_hi : vaultData.body_en;
+      document.getElementById('sr-lang-btn').innerText = (readerCurrentLang === 'hi') ? 'Switch to English' : 'हिन्दी में पढ़ें';
       document.getElementById('secure-reader-modal').classList.remove('hidden');
+    }
+
+    function toggleReaderLang() {
+      readerCurrentLang = (readerCurrentLang === 'hi') ? 'en' : 'hi';
+      openSecureReader(currentActiveStudyItem);
     }
 
     function closeSecureReader() {
