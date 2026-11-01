@@ -481,7 +481,7 @@
   </div>
 
   <!-- ================= SECURE ONLINE READER MODAL ================= -->
-  <div id="secure-reader-modal" class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-lg hidden flex flex-col p-2 sm:p-6">
+  <div id="secure-reader-modal" style="display: none;" class="fixed inset-0 z-[70] bg-slate-950/95 backdrop-blur-lg flex flex-col p-2 sm:p-6">
     <div class="max-w-4xl w-full mx-auto bg-slate-900 border border-slate-700 rounded-3xl flex-1 flex flex-col overflow-hidden shadow-2xl">
       <div class="p-4 border-b border-slate-800 flex items-center justify-between">
         <div>
@@ -1459,7 +1459,7 @@
       btn.className = "w-full py-3 rounded-xl bg-slate-800 text-slate-500 font-bold text-xs cursor-not-allowed";
       bar.style.width = "0%";
 
-      let count = 10;
+      let count = 5; // 5-second ultra fast ad response for instant reader loading
       timer.innerText = `${count}s`;
       setTimeout(() => { bar.style.width = "100%"; }, 50);
 
@@ -1468,42 +1468,62 @@
         count--;
         if (count > 0) {
           timer.innerText = `${count}s`;
-          btn.innerHTML = `Ad Playing (${count}s)...`;
+          btn.innerHTML = `<i class="fa-solid fa-lock mr-2"></i> Ad Playing (${count}s)...`;
         } else {
           clearInterval(adInterval);
-          timer.innerText = "Done!";
+          timer.innerText = "Completed!";
           btn.disabled = false;
           btn.className = "w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs cursor-pointer shadow-lg shadow-emerald-600/20";
-          btn.innerHTML = "Ad Finished - Open Full Notes";
+          btn.innerHTML = `<i class="fa-solid fa-lock-open mr-2"></i> Opening Study Notes...`;
           btn.onclick = finishAdAndProceed;
+          
+          // Auto-open after 400ms without forcing the user to tap
+          setTimeout(() => {
+            finishAdAndProceed();
+          }, 400);
         }
       }, 1000);
     }
 
     function finishAdAndProceed() {
-      document.getElementById('ad-interstitial-modal').classList.add('hidden');
-      openSecureReader(pendingAction.title);
+      const adModal = document.getElementById('ad-interstitial-modal');
+      if (adModal) {
+        adModal.classList.add('hidden');
+        adModal.style.display = 'none';
+      }
+      const itemTitle = (pendingAction && pendingAction.title) ? pendingAction.title : "Complete Study Notes & Model Blueprint";
+      openSecureReader(itemTitle);
     }
 
     function openSecureReader(title) {
+      title = title || "Complete Study Notes & Blueprint";
       currentActiveStudyItem = title;
-      readerCurrentLang = globalLang;
+      readerCurrentLang = globalLang || 'hi';
 
       let key = "10th Board";
-      if (title.includes("CTET") || title.includes("TET") || title.includes("KVS") || title.includes("NET")) {
+      const str = String(title).toLowerCase();
+      if (str.includes("ctet") || str.includes("tet") || str.includes("kvs") || str.includes("net") || str.includes("teach") || str.includes("cdp")) {
         key = "CTET 2026";
-      } else if (title.includes("Civil") || title.includes("SOM") || title.includes("RCC")) {
+      } else if (str.includes("civil") || str.includes("som") || str.includes("rcc") || str.includes("mech") || str.includes("elec") || str.includes("diploma")) {
         key = "Diploma Civil";
-      } else if (title.includes("10") || title.includes("12") || title.includes("Board") || title.includes("Class")) {
+      } else {
         key = "10th Board";
       }
 
-      const vaultData = COMPREHENSIVE_STUDY_VAULT[key];
+      const vaultData = COMPREHENSIVE_STUDY_VAULT[key] || COMPREHENSIVE_STUDY_VAULT["10th Board"];
 
-      document.getElementById('sr-title').innerText = title;
-      document.getElementById('sr-body').innerHTML = (readerCurrentLang === 'hi') ? vaultData.body_hi : vaultData.body_en;
-      document.getElementById('sr-lang-btn').innerText = (readerCurrentLang === 'hi') ? 'Switch to English' : 'हिन्दी में पढ़ें';
-      document.getElementById('secure-reader-modal').classList.remove('hidden');
+      const titleEl = document.getElementById('sr-title');
+      const bodyEl = document.getElementById('sr-body');
+      const langBtn = document.getElementById('sr-lang-btn');
+      const modalEl = document.getElementById('secure-reader-modal');
+
+      if (titleEl) titleEl.innerText = title;
+      if (bodyEl) bodyEl.innerHTML = (readerCurrentLang === 'hi') ? vaultData.body_hi : vaultData.body_en;
+      if (langBtn) langBtn.innerText = (readerCurrentLang === 'hi') ? 'Switch to English' : 'हिन्दी में पढ़ें';
+      if (modalEl) {
+        modalEl.classList.remove('hidden');
+        modalEl.style.display = 'flex';
+      }
     }
 
     function toggleReaderLang() {
@@ -1512,7 +1532,11 @@
     }
 
     function closeSecureReader() {
-      document.getElementById('secure-reader-modal').classList.add('hidden');
+      const modalEl = document.getElementById('secure-reader-modal');
+      if (modalEl) {
+        modalEl.classList.add('hidden');
+        modalEl.style.display = 'none';
+      }
     }
 
     function setupSecurity() {
