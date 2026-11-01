@@ -1,31 +1,12 @@
 <!DOCTYPE html>
-<html lang="hi" class="dark scroll-smooth">
+<html lang="hi" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Primary SEO Meta Tags -->
   <title>RozgarSetu | All-India Jobs, 10th/12th Boards, Teaching Exams, Diploma JE & CBT Hub</title>
-  <meta name="title" content="RozgarSetu | All-India Jobs, 10th/12th Boards, Teaching Exams, Diploma JE & CBT Hub">
-  <meta name="description" content="India's #1 Free Exam Prep & Job Alert Portal. Sarkari, PSU & Private MNC jobs, 28+ State Boards 10th/12th model papers, CTET teaching notes, Diploma JE, Top 100 Illustrated Daily News & CBT Mock Tests.">
-  <meta name="keywords" content="sarkari result, ctet 2026, ssc cgl, rrb ntpc, 10th board paper, 12th board paper, diploma je, ssc je, top 100 news, current affairs 2026">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="Hindi, English">
-  <meta name="theme-color" content="#0284c7">
-
-  <!-- Open Graph / Facebook / WhatsApp -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://rozgarsetu.vercel.app/">
-  <meta property="og:title" content="RozgarSetu | Complete National Education & Job Portal">
-  <meta property="og:description" content="Free Job Notifications, 10th/12th State Board Papers, CTET Pedagogy Notes & Real CBT Mock Tests.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1517976487502-5f6902206775?auto=format&fit=crop&w=1200&q=80">
-
-  <!-- Official Google AdSense Integration -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6061356963160594"
-     crossorigin="anonymous"></script>
-
-  <!-- Favicon (SVG) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563eb'/><text x='50%' y='68%' font-size='50' font-weight='900' fill='white' text-anchor='middle' font-family='sans-serif'>RS</text></svg>">
+  
+  <!-- Google AdSense Official Tag -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6061356963160594" crossorigin="anonymous"></script>
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -36,12 +17,13 @@
         extend: {
           colors: {
             brand: {
-              50: '#f0f7ff',
-              500: '#0284c7',
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
               600: '#2563eb',
               700: '#1d4ed8',
               800: '#1e40af',
-              900: '#0f172a',
+              900: '#1e3a8a',
             }
           }
         }
@@ -49,7 +31,6 @@
     }
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  
   <style>
     .no-select {
       -webkit-user-select: none;
@@ -57,127 +38,99 @@
       -ms-user-select: none;
       user-select: none;
     }
-    ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: #070d19; }
-    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
-    .glass-card {
-      background: rgba(15, 23, 42, 0.75);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #475569;
     }
   </style>
-
-  <!-- Schema.org JSON-LD for Google Rich Results -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "RozgarSetu",
-    "url": "https://rozgarsetu.vercel.app",
-    "logo": "https://rozgarsetu.vercel.app/logo.png",
-    "description": "All India Sarkari, PSU and Private Jobs, Board Model Papers, Teaching Exams, and CBT Mock Tests.",
-    "sameAs": [
-      "https://t.me/rozgarsetu_official"
-    ]
-  }
-  </script>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-blue-600 selection:text-white relative">
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-blue-600 selection:text-white">
 
   <!-- ================= TOP ALERT TICKER ================= -->
-  <div class="bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-700 text-xs py-1.5 px-4 text-center font-medium flex items-center justify-between border-b border-white/10">
-    <div class="flex items-center gap-2 mx-auto">
-      <span class="bg-amber-400 text-slate-950 px-2 py-0.5 rounded text-[10px] font-black uppercase animate-pulse">LIVE PORTAL</span>
-      <span id="ticker-text">🚀 Teaching Exams (CTET/TET) | 10th &amp; 12th Boards | Final Year Degree Papers | Chapter-Wise CBT Tests | Local Languages</span>
-    </div>
-    <div class="hidden xl:flex items-center gap-2 text-[11px] font-bold">
-      <span class="px-2 py-0.5 rounded bg-white/10 text-white backdrop-blur-sm">
-        <i class="fa-solid fa-graduation-cap mr-1"></i> Class 10th to Graduate Level
-      </span>
-    </div>
+  <div class="bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-700 text-xs md:text-sm py-1.5 px-4 text-center font-medium flex items-center justify-center gap-2">
+    <span class="bg-red-500 text-white px-2 py-0.5 rounded text-[10px] font-bold uppercase animate-pulse">NEW</span>
+    <span id="ticker-text">🚀 SSC CGL 2026 Notification Out | 10th & 12th Board Papers 2026 | CTET Master Pedagogy Notes Live</span>
   </div>
 
-  <!-- ================= MAIN NAVIGATION BAR ================= -->
+  <!-- ================= HEADER & BRANDING ================= -->
   <header class="sticky top-0 z-40 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 shadow-xl">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      
-      <!-- Brand Logo -->
-      <div class="flex items-center gap-3 cursor-pointer" onclick="switchSuperTab('jobs')">
-        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-blue-600 via-indigo-500 to-cyan-400 flex items-center justify-center font-black text-xl text-white shadow-lg shadow-blue-500/25">
-          RS
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center shadow-lg shadow-blue-500/30">
+            <i class="fa-solid fa-graduation-cap text-white text-lg"></i>
+          </div>
+          <div>
+            <span class="text-xl font-black bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400 bg-clip-text text-transparent">RozgarSetu</span>
+            <span class="block text-[10px] text-slate-400 tracking-wider uppercase font-semibold">National Study & Job Hub</span>
+          </div>
         </div>
-        <div>
-          <span class="font-extrabold text-xl tracking-tight text-white">Rozgar<span class="text-blue-500">Setu</span></span>
-          <span class="hidden sm:inline-block text-[9px] ml-2 px-2 py-0.5 rounded-full bg-blue-950 text-blue-400 border border-blue-800 font-bold uppercase tracking-wider">National Hub</span>
+
+        <!-- Super Nav Tabs -->
+        <nav class="hidden md:flex items-center gap-1 text-xs font-semibold text-slate-300">
+          <button onclick="switchSuperTab('jobs')" id="s-nav-jobs" class="px-3 py-2 rounded-lg hover:bg-slate-800 text-blue-400 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-briefcase"></i> <span>Jobs Hub</span>
+          </button>
+          <button onclick="switchSuperTab('teaching')" id="s-nav-teaching" class="px-3 py-2 rounded-lg hover:bg-slate-800 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-chalkboard-user"></i> <span>Teaching Exams</span>
+          </button>
+          <button onclick="switchSuperTab('boards')" id="s-nav-boards" class="px-3 py-2 rounded-lg hover:bg-slate-800 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-book-open"></i> <span>10th / 12th Boards</span>
+          </button>
+          <button onclick="switchSuperTab('graduates')" id="s-nav-graduates" class="px-3 py-2 rounded-lg hover:bg-slate-800 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-user-graduate"></i> <span>Degree Finals</span>
+          </button>
+          <button onclick="switchSuperTab('chapter-tests')" id="s-nav-chapter-tests" class="px-3 py-2 rounded-lg hover:bg-slate-800 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-stopwatch-20"></i> <span>CBT Tests</span>
+          </button>
+          <button onclick="switchSuperTab('diploma-je')" id="s-nav-diploma-je" class="px-3 py-2 rounded-lg hover:bg-slate-800 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-compass-drafting"></i> <span>Diploma JE</span>
+          </button>
+          <button onclick="switchSuperTab('news-feed')" id="s-nav-news-feed" class="px-3 py-2 rounded-lg hover:bg-slate-800 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-newspaper"></i> <span>Top 100 News</span>
+          </button>
+        </nav>
+
+        <!-- Language Controls -->
+        <div class="flex items-center gap-2">
+          <!-- State Board Selector -->
+          <select id="state-language-select" onchange="onStateLangChange(this.value)" class="bg-slate-800 border border-slate-700 text-[11px] text-slate-300 rounded-lg px-2 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500">
+            <option value="all">🇮🇳 All India (National)</option>
+            <option value="up">उत्तर प्रदेश (UPMSP)</option>
+            <option value="bihar">बिहार (BSEB)</option>
+            <option value="maha">महाराष्ट्र (मराठी/English)</option>
+            <option value="gujarat">ગુજરાત (ગુજરાતી)</option>
+            <option value="tn">தமிழ்நாடு (தமிழ்/English)</option>
+            <option value="karnataka">ಕರ್ನಾಟಕ (ಕನ್ನಡ/English)</option>
+          </select>
+
+          <!-- Bilingual Toggle Button -->
+          <button onclick="toggleGlobalLang()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 border border-blue-500/30 text-xs font-bold transition">
+            <i class="fa-solid fa-language"></i>
+            <span id="lang-btn-label">हिन्दी / English</span>
+          </button>
         </div>
       </div>
-
-      <!-- Mega Category Nav -->
-      <nav class="hidden lg:flex items-center gap-4 text-xs font-bold text-slate-300">
-        <button onclick="switchSuperTab('jobs')" id="s-nav-jobs" class="super-nav-btn text-blue-400 flex items-center gap-1.5 transition">
-          <i class="fa-solid fa-briefcase"></i> <span>Jobs</span>
-        </button>
-        <button onclick="switchSuperTab('teaching')" id="s-nav-teaching" class="super-nav-btn hover:text-blue-400 flex items-center gap-1.5 transition">
-          <i class="fa-solid fa-chalkboard-user text-amber-400"></i> <span>Teaching Exams</span>
-          <span class="bg-amber-500/20 text-amber-400 text-[9px] px-1.5 py-0.2 rounded font-black">CTET</span>
-        </button>
-        <button onclick="switchSuperTab('boards')" id="s-nav-boards" class="super-nav-btn hover:text-blue-400 flex items-center gap-1.5 transition">
-          <i class="fa-solid fa-school text-emerald-400"></i> <span>10th &amp; 12th Boards</span>
-        </button>
-        <button onclick="switchSuperTab('graduates')" id="s-nav-graduates" class="super-nav-btn hover:text-blue-400 flex items-center gap-1.5 transition">
-          <i class="fa-solid fa-user-graduate text-purple-400"></i> <span>Degree Papers</span>
-        </button>
-        <button onclick="switchSuperTab('chapter-tests')" id="s-nav-chapter-tests" class="super-nav-btn hover:text-blue-400 flex items-center gap-1.5 transition">
-          <i class="fa-solid fa-list-check text-rose-400"></i> <span>Chapter Tests</span>
-          <span class="bg-rose-500/20 text-rose-400 text-[9px] px-1.5 py-0.2 rounded font-black">Rapid</span>
-        </button>
-        <button onclick="switchSuperTab('diploma-je')" id="s-nav-diploma-je" class="super-nav-btn hover:text-blue-400 flex items-center gap-1.5 transition">
-          <i class="fa-solid fa-screwdriver-wrench text-cyan-400"></i> <span>Diploma JE</span>
-        </button>
-        <button onclick="switchSuperTab('news-feed')" id="s-nav-news-feed" class="super-nav-btn hover:text-blue-400 flex items-center gap-1.5 transition">
-          <i class="fa-solid fa-newspaper text-indigo-400"></i> <span>Top 100 News</span>
-        </button>
-      </nav>
-
-      <!-- Language & Regional Selector -->
-      <div class="flex items-center gap-2">
-        <select id="state-language-select" onchange="onStateLangChange(this.value)" class="bg-slate-800 text-slate-200 border border-slate-700 text-xs font-bold rounded-xl px-2.5 py-1.5 focus:outline-none focus:border-blue-500">
-          <option value="all_hi_en">🇮🇳 All India (हिन्दी / English)</option>
-          <option value="mr">महाराष्ट्र (मराठी / English)</option>
-          <option value="bn">পশ্চিমবঙ্গ (বাংলা / English)</option>
-          <option value="ta">தமிழ்நாடு (தமிழ் / English)</option>
-          <option value="kn">ಕರ್ನಾಟಕ (ಕನ್ನಡ / English)</option>
-          <option value="gu">ગુજરાત (ગુજરાતી / English)</option>
-          <option value="pa">ਪੰਜਾਬ (ਪੰਜਾਬੀ / English)</option>
-        </select>
-
-        <button onclick="toggleGlobalLang()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 border border-blue-500/30 text-xs font-bold transition">
-          <i class="fa-solid fa-language text-sm"></i>
-          <span id="lang-btn-label">हिन्दी / English</span>
-        </button>
-      </div>
-
-    </div>
-
-    <!-- Mobile Subbar Navigation -->
-    <div class="lg:hidden flex items-center overflow-x-auto gap-2 px-4 py-2 border-t border-slate-800 text-xs font-semibold scrollbar-none bg-slate-950">
-      <button onclick="switchSuperTab('jobs')" class="whitespace-nowrap px-3 py-1 rounded-lg bg-blue-600 text-white">Jobs</button>
-      <button onclick="switchSuperTab('teaching')" class="whitespace-nowrap px-3 py-1 rounded-lg bg-slate-900 text-slate-300 border border-slate-800">Teaching</button>
-      <button onclick="switchSuperTab('boards')" class="whitespace-nowrap px-3 py-1 rounded-lg bg-slate-900 text-slate-300 border border-slate-800">Boards 10/12</button>
-      <button onclick="switchSuperTab('graduates')" class="whitespace-nowrap px-3 py-1 rounded-lg bg-slate-900 text-slate-300 border border-slate-800">Degree Papers</button>
-      <button onclick="switchSuperTab('chapter-tests')" class="whitespace-nowrap px-3 py-1 rounded-lg bg-slate-900 text-slate-300 border border-slate-800">Chapter Tests</button>
-      <button onclick="switchSuperTab('diploma-je')" class="whitespace-nowrap px-3 py-1 rounded-lg bg-slate-900 text-slate-300 border border-slate-800">Diploma JE</button>
-      <button onclick="switchSuperTab('news-feed')" class="whitespace-nowrap px-3 py-1 rounded-lg bg-slate-900 text-slate-300 border border-slate-800">Top 100 News</button>
     </div>
   </header>
 
-  <!-- ================= TOP GOOGLE ADSENSE LEADERBOARD UNIT ================= -->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-    <div class="w-full bg-slate-900/60 border border-slate-800 rounded-2xl p-2 flex flex-col items-center justify-center text-xs overflow-hidden">
-      <!-- Responsive Google AdSense Banner -->
+  <!-- ================= ADSENSE LEADERBOARD UNIT ================= -->
+  <div class="max-w-7xl mx-auto px-4 mt-4">
+    <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-3 text-center min-h-[90px] flex flex-col items-center justify-center">
+      <span class="text-[10px] text-slate-500 uppercase tracking-widest font-mono mb-1">Sponsored Advertisement</span>
       <ins class="adsbygoogle"
-           style="display:block; width:100%; text-align:center;"
+           style="display:block"
            data-ad-client="ca-pub-6061356963160594"
            data-ad-slot="1234567890"
            data-ad-format="auto"
@@ -188,245 +141,149 @@
     </div>
   </div>
 
-  <!-- ================= MAIN TWO-COLUMN BODY CONTAINER ================= -->
+  <!-- ================= MAIN CONTENT CONTAINER ================= -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
 
-      <!-- LEFT COLUMN: MAIN CONTENT VIEWS (3 COLUMNS) -->
-      <div class="lg:col-span-3 space-y-8">
-
-        <!-- ========================================================================= -->
-        <!-- 1. JOBS VIEW (SARKARI, PSU, PRIVATE) -->
-        <!-- ========================================================================= -->
-        <div id="view-jobs" class="space-y-6">
-          <div class="flex flex-col sm:flex-row gap-3">
-            <div class="relative flex-1">
-              <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-slate-400 text-sm"></i>
-              <input type="text" id="job-search" onkeyup="renderJobsList()" placeholder="Search: SSC, ONGC, TCS, CTET, Railway, B.Tech, 10th..." 
-                class="w-full bg-slate-900 border border-slate-700 rounded-xl pl-10 pr-4 py-2.5 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500">
-            </div>
-            <div class="flex gap-2">
-              <button onclick="setJobType('all')" id="jt-all" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white">All</button>
-              <button onclick="setJobType('sarkari')" id="jt-sarkari" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">Sarkari</button>
-              <button onclick="setJobType('psu')" id="jt-psu" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">PSU</button>
-              <button onclick="setJobType('private')" id="jt-private" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">Private</button>
-            </div>
-          </div>
-          <div id="jobs-grid" class="grid grid-cols-1 md:grid-cols-2 gap-5"></div>
+    <!-- ---------------- SECTION 1: JOBS HUB ---------------- -->
+    <section id="view-jobs" class="space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
+            <i class="fa-solid fa-bullhorn text-blue-500"></i>
+            <span>All-India Sarkari, PSU &amp; Private MNC Job Openings</span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">Official verified recruitment notifications with direct apply links and exam blueprints.</p>
         </div>
-
-        <!-- ========================================================================= -->
-        <!-- 2. TEACHING EXAMS HUB (CTET, STATE TETS, PRT, TGT, PGT, KVS, NVS) -->
-        <!-- ========================================================================= -->
-        <div id="view-teaching" class="hidden space-y-6">
-          <div class="bg-gradient-to-r from-amber-950/40 via-slate-900 to-slate-900 border border-amber-500/30 rounded-3xl p-6">
-            <span class="px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 text-xs font-bold uppercase">
-              <i class="fa-solid fa-chalkboard-user mr-1"></i> Central &amp; State Teacher Eligibility
-            </span>
-            <h2 class="text-2xl font-black text-white mt-2">Teaching Exams Hub: CTET, State TETs &amp; KVS/NVS</h2>
-            <p class="text-xs sm:text-sm text-slate-300 mt-1">
-              Complete Child Development &amp; Pedagogy (CDP), Teaching Methodology, PRT/TGT/PGT syllabus, study notes aur CBT mock tests.
-            </p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="teaching-cards-grid"></div>
+        <div class="flex items-center gap-2 flex-wrap">
+          <button onclick="setJobType('all')" id="jt-all" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white">All Jobs</button>
+          <button onclick="setJobType('sarkari')" id="jt-sarkari" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">Sarkari</button>
+          <button onclick="setJobType('psu')" id="jt-psu" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">PSU</button>
+          <button onclick="setJobType('private')" id="jt-private" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">Private MNC</button>
         </div>
-
-        <!-- ========================================================================= -->
-        <!-- 3. BOARDS HUB (ALL 28+ INDIAN STATE BOARDS + CBSE / ICSE / NIOS) -->
-        <!-- ========================================================================= -->
-        <div id="view-boards" class="hidden space-y-6">
-          <div class="bg-gradient-to-r from-emerald-950/40 via-slate-900 to-slate-900 border border-emerald-500/30 rounded-3xl p-6">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div>
-                <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold uppercase">
-                  <i class="fa-solid fa-school mr-1"></i> Pan-India All 28+ State Boards &amp; National Councils
-                </span>
-                <h2 class="text-2xl font-black text-white mt-2">Class 10th &amp; 12th All States Board Exam Model Papers</h2>
-                <p class="text-xs sm:text-sm text-slate-300 mt-1">
-                  CBSE, ICSE, NIOS aur sabhi rajyo ke boards (UP, Bihar, Maharashtra, Gujarat, Tamil Nadu, Karnataka, Kerala, AP/TS, WB, Odisha, Punjab) ke solved sample papers local bhashao me!
-                </p>
-              </div>
-
-              <!-- Quick Board Selector Dropdown -->
-              <div class="bg-slate-950 border border-slate-800 p-2.5 rounded-2xl">
-                <label class="text-[10px] text-slate-400 font-bold uppercase block mb-1">Select State Board:</label>
-                <select id="board-state-filter" onchange="filterBoardCards(this.value)" class="bg-slate-900 text-xs font-bold text-emerald-400 rounded-xl px-3 py-1.5 border border-slate-700 focus:outline-none focus:border-emerald-500">
-                  <option value="all">🇮🇳 All Indian Boards (सभी 28+ राज्य बोर्ड)</option>
-                  <option value="cbse_icse">National: CBSE / ICSE / NIOS</option>
-                  <option value="up_board">Uttar Pradesh (UPMSP - उत्तर प्रदेश बोर्ड)</option>
-                  <option value="bihar_board">Bihar (BSEB - बिहार विद्यालय परीक्षा समिति)</option>
-                  <option value="maha_board">Maharashtra (MSBSHSE - महाराष्ट्र बोर्ड - मराठी)</option>
-                  <option value="gujarat_board">Gujarat (GSEB - ગુજરાત બોર્ડ - ગુજરાતી)</option>
-                  <option value="tn_board">Tamil Nadu (TNDGE - தமிழ்நாடு வாரியம் - தமிழ்)</option>
-                  <option value="karnataka_board">Karnataka (KSEEB / KSEAB - ಕರ್ನಾಟಕ ಮಂಡಳಿ - ಕನ್ನಡ)</option>
-                  <option value="ap_ts_board">Andhra &amp; Telangana (BSEAP / TSBIE - తెలుగు)</option>
-                  <option value="kerala_board">Kerala (DHSE / SSLC - കേരള ബോർഡ് - മലയാളം)</option>
-                  <option value="wb_board">West Bengal (WBBSE / WBCHSE - বাংলা)</option>
-                  <option value="odisha_board">Odisha (BSE / CHSE - ଓଡ଼ିଶା ବୋର୍ଡ - ଓଡ଼ିଆ)</option>
-                  <option value="punjab_board">Punjab (PSEB - ਪੰਜਾਬ ਬੋਰਡ - ਪੰਜਾਬੀ)</option>
-                  <option value="rajasthan_board">Rajasthan (RBSE - राजस्थान बोर्ड)</option>
-                  <option value="mp_board">Madhya Pradesh (MPBSE - एमपी बोर्ड)</option>
-                  <option value="haryana_board">Haryana (BSEH - हरियाणा बोर्ड)</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <!-- Class 10th vs 12th Toggle -->
-          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
-            <div class="flex gap-2">
-              <button onclick="setBoardClass('10th')" id="board-btn-10th" class="px-4 py-2 rounded-xl text-xs font-bold bg-emerald-600 text-white">Class 10th (Matric / SSLC)</button>
-              <button onclick="setBoardClass('12th')" id="board-btn-12th" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">Class 12th (Inter / HSC / PUC)</button>
-            </div>
-            <span id="active-board-count" class="text-xs text-slate-400 font-mono hidden sm:inline-block">Showing All Boards</span>
-          </div>
-
-          <!-- Board Cards Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="boards-cards-grid"></div>
-        </div>
-
-        <!-- ========================================================================= -->
-        <!-- 4. DEGREE FINAL YEAR HUB (B.TECH, B.SC, B.COM, B.A) -->
-        <!-- ========================================================================= -->
-        <div id="view-graduates" class="hidden space-y-6">
-          <div class="bg-gradient-to-r from-purple-950/40 via-slate-900 to-slate-900 border border-purple-500/30 rounded-3xl p-6">
-            <span class="px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-400 border border-purple-500/30 text-xs font-bold uppercase">
-              <i class="fa-solid fa-user-graduate mr-1"></i> University Degree Final Year
-            </span>
-            <h2 class="text-2xl font-black text-white mt-2">College Final Year Model Question Papers &amp; Solution Banks</h2>
-            <p class="text-xs sm:text-sm text-slate-300 mt-1">
-              B.Tech, B.Sc, B.Com, B.A, aur B.Ed ke final year sample papers previous year questions ke vishleshan ke sath.
-            </p>
-          </div>
-
-          <div class="flex gap-2 overflow-x-auto pb-2 border-b border-slate-800 scrollbar-none">
-            <button onclick="setDegreeStream('btech')" id="deg-btech" class="px-4 py-2 rounded-xl text-xs font-bold bg-purple-600 text-white">B.Tech / B.E (Engineering)</button>
-            <button onclick="setDegreeStream('bsc')" id="deg-bsc" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">B.Sc (Science / IT)</button>
-            <button onclick="setDegreeStream('bcom')" id="deg-bcom" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">B.Com (Commerce / Accounts)</button>
-            <button onclick="setDegreeStream('ba')" id="deg-ba" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">B.A (Humanities / History)</button>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="graduates-cards-grid"></div>
-        </div>
-
-        <!-- ========================================================================= -->
-        <!-- 5. SUBJECT-WISE & CHAPTER-WISE RAPID TESTS -->
-        <!-- ========================================================================= -->
-        <div id="view-chapter-tests" class="hidden space-y-6">
-          <div class="bg-gradient-to-r from-rose-950/40 via-slate-900 to-slate-900 border border-rose-500/30 rounded-3xl p-6">
-            <span class="px-2.5 py-0.5 rounded-full bg-rose-500/20 text-rose-400 border border-rose-500/30 text-xs font-bold uppercase">
-              <i class="fa-solid fa-list-check mr-1"></i> Micro-Testing Engine
-            </span>
-            <h2 class="text-2xl font-black text-white mt-2">Subject &amp; Chapter-Wise CBT Mock Tests</h2>
-            <p class="text-xs sm:text-sm text-slate-300 mt-1">
-              Apna subject aur chapter chunein aur 5-minute ka 10-question test dekar instant rank aur solution dekhein.
-            </p>
-          </div>
-
-          <div class="bg-slate-900 border border-slate-800 p-4 rounded-2xl flex flex-col sm:flex-row gap-3">
-            <select id="chapter-subject-select" onchange="onChapterSubjectChange(this.value)" class="bg-slate-950 border border-slate-700 text-xs font-bold rounded-xl px-3 py-2 text-slate-200">
-              <option value="polity">🏛️ Indian Polity (संविधान व राजव्यवस्था)</option>
-              <option value="quant">📐 Quantitative Aptitude (गणित ट्रिक्स)</option>
-              <option value="reasoning">🧠 Logical Reasoning (तर्कशक्ति)</option>
-              <option value="cdp">👶 Child Development &amp; Pedagogy (शिक्षण शास्त्र)</option>
-            </select>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="chapter-tests-grid"></div>
-        </div>
-
-        <!-- ========================================================================= -->
-        <!-- 6. DIPLOMA & POLYTECHNIC JE VIEW -->
-        <!-- ========================================================================= -->
-        <div id="view-diploma-je" class="hidden space-y-6">
-          <div class="bg-gradient-to-r from-cyan-950/40 via-slate-900 to-slate-900 border border-cyan-500/30 rounded-3xl p-6">
-            <h2 class="text-2xl font-black text-white">Diploma &amp; Polytechnic Junior Engineer (JE) Section</h2>
-            <p class="text-xs text-slate-300 mt-1">SSC JE, RRB JE, State Power Corp &amp; PWD Engineering study material.</p>
-          </div>
-          <div class="flex gap-2 overflow-x-auto pb-2 border-b border-slate-800">
-            <button onclick="setDiplomaBranch('civil')" id="dip-civil" class="px-4 py-2 rounded-xl text-xs font-bold bg-cyan-600 text-white">Civil Engg</button>
-            <button onclick="setDiplomaBranch('mech')" id="dip-mech" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">Mechanical Engg</button>
-            <button onclick="setDiplomaBranch('elec')" id="dip-elec" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">Electrical Engg</button>
-            <button onclick="setDiplomaBranch('ece_cs')" id="dip-ece_cs" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">Electronics &amp; CS</button>
-          </div>
-          <div id="diploma-content-grid" class="grid grid-cols-1 md:grid-cols-2 gap-5"></div>
-        </div>
-
-        <!-- ========================================================================= -->
-        <!-- 7. TOP 100 NEWS VIEW (PHOTOS + MORNING/EVENING) -->
-        <!-- ========================================================================= -->
-        <div id="view-news-feed" class="hidden space-y-6">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
-            <div>
-              <h2 class="text-2xl font-black text-white">Top 100 Illustrated News (100 Words)</h2>
-              <p class="text-xs text-slate-400">Morning 8 AM &amp; Evening 8 PM Editions with HD Photos.</p>
-            </div>
-            <div class="flex items-center bg-slate-900 border border-slate-800 p-1 rounded-2xl">
-              <button onclick="setNewsEdition('morning')" id="btn-edition-morning" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-blue-600 text-white flex items-center gap-1.5">
-                <i class="fa-solid fa-sun text-amber-400"></i> Morning 8:00 AM
-              </button>
-              <button onclick="setNewsEdition('evening')" id="btn-edition-evening" class="px-3 py-1.5 rounded-xl text-xs font-bold text-slate-400 hover:text-white flex items-center gap-1.5">
-                <i class="fa-solid fa-moon text-purple-400"></i> Evening 8:00 PM
-              </button>
-            </div>
-          </div>
-          <div id="news-cards-container" class="grid grid-cols-1 md:grid-cols-2 gap-5"></div>
-        </div>
-
       </div>
 
-      <!-- ================= RIGHT COLUMN: STICKY DISPLAY ADS & QUICK QUIZ (1 COLUMN) ================= -->
-      <aside class="space-y-6">
-        
-        <!-- SIDEBAR AD (300x250 Medium Rectangle) -->
-        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-4 space-y-3 sticky top-20 shadow-xl">
-          <div class="flex items-center justify-between text-[10px] text-slate-500 font-bold uppercase tracking-wider">
-            <span>Advertisement</span>
-            <i class="fa-solid fa-circle-info"></i>
-          </div>
+      <!-- Search Bar -->
+      <div class="relative">
+        <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-slate-500 text-sm"></i>
+        <input type="text" id="job-search" oninput="renderJobsList()" placeholder="Search by job title, department, or qualification..." class="w-full bg-slate-900 border border-slate-800 rounded-2xl pl-11 pr-4 py-3 text-xs sm:text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
 
-          <div class="bg-gradient-to-b from-blue-950 to-slate-950 border border-blue-800/40 rounded-2xl p-4 text-center space-y-3">
-            <div class="w-10 h-10 rounded-xl bg-blue-600/30 text-blue-400 flex items-center justify-center mx-auto text-lg font-bold">
-              <i class="fa-solid fa-book-open"></i>
-            </div>
-            <h4 class="text-xs font-extrabold text-white">CTET 2026 Child Pedagogy (CDP) Master 1500+ PYQ Question Bank</h4>
-            <p class="text-[11px] text-slate-400">Piaget, Vygotsky &amp; Kohlberg theories in easy Hindi &amp; English</p>
-            <button class="w-full py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition">
-              Get Free PDF Notes
-            </button>
-          </div>
+      <!-- Jobs Grid -->
+      <div id="jobs-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </section>
 
-          <!-- Mini Rapid Fire Quiz -->
-          <div class="pt-3 border-t border-slate-800 space-y-2">
-            <div class="flex items-center justify-between">
-              <span class="text-xs font-bold text-amber-400">⚡ Rapid Fire Test</span>
-              <span class="text-[10px] bg-slate-800 px-1.5 py-0.5 rounded text-slate-400 font-mono">Exam Fact</span>
-            </div>
-            <p class="text-[11px] text-slate-300 font-medium">Jean Piaget ke anusaar 'Cognitive Development' ki kitni stages hain?</p>
-            <div class="grid grid-cols-2 gap-1.5 text-[10px] font-mono">
-              <button onclick="alert('Correct! 4 Stages: Sensorimotor, Preoperational, Concrete, Formal!')" class="p-2 rounded bg-slate-950 hover:bg-blue-900/50 border border-slate-800 text-slate-300">A. 4 Stages</button>
-              <button onclick="alert('Galat! Total 4 stages hoti hain.')" class="p-2 rounded bg-slate-950 hover:bg-blue-900/50 border border-slate-800 text-slate-300">B. 3 Stages</button>
-              <button onclick="alert('Galat!')" class="p-2 rounded bg-slate-950 hover:bg-blue-900/50 border border-slate-800 text-slate-300">C. 5 Stages</button>
-              <button onclick="alert('Galat!')" class="p-2 rounded bg-slate-950 hover:bg-blue-900/50 border border-slate-800 text-slate-300">D. 6 Stages</button>
-            </div>
-          </div>
+    <!-- ---------------- SECTION 2: TEACHING EXAMS HUB ---------------- -->
+    <section id="view-teaching" class="space-y-6 hidden">
+      <div class="border-b border-slate-800 pb-4">
+        <h2 class="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
+          <i class="fa-solid fa-chalkboard-user text-amber-400"></i>
+          <span>Teaching Exams Master Preparation Hub (2026)</span>
+        </h2>
+        <p class="text-xs text-slate-400 mt-1">CTET (Paper 1 &amp; 2), State TETs, KVS/NVS, and UGC NET Child Development &amp; Pedagogy Vault.</p>
+      </div>
+      <div id="teaching-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5"></div>
+    </section>
+
+    <!-- ---------------- SECTION 3: 10TH & 12TH BOARDS ---------------- -->
+    <section id="view-boards" class="space-y-6 hidden">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
+            <i class="fa-solid fa-book-open text-emerald-400"></i>
+            <span>All State Boards (Class 10th &amp; 12th) Model Papers 2026</span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">Complete step-by-step solved papers across CBSE, UP, Bihar, Maharashtra, Gujarat, TN &amp; Karnataka.</p>
         </div>
-
-        <!-- SECOND SIDEBAR AD: Degree & Job Alert -->
-        <div class="bg-slate-900/60 border border-slate-800 rounded-3xl p-4 text-center space-y-2">
-          <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Campus Hiring</span>
-          <div class="p-3 bg-slate-950 rounded-2xl border border-slate-800 text-xs space-y-2">
-            <div class="text-emerald-400 font-bold">TCS, Wipro, Infosys Off-Campus Coding Batch</div>
-            <p class="text-[10px] text-slate-400">Data Structures &amp; Coding placement test series free for final year students.</p>
-            <button class="px-4 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-[10px] transition">
-              Register Free
-            </button>
-          </div>
+        <div class="flex items-center gap-2">
+          <button onclick="setBoardClass('10th')" id="board-btn-10th" class="px-4 py-2 rounded-xl text-xs font-bold bg-emerald-600 text-white">Class 10th</button>
+          <button onclick="setBoardClass('12th')" id="board-btn-12th" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">Class 12th</button>
         </div>
+      </div>
+      <div id="boards-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+    </section>
 
-      </aside>
+    <!-- ---------------- SECTION 4: DEGREE FINAL YEAR ---------------- -->
+    <section id="view-graduates" class="space-y-6 hidden">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
+            <i class="fa-solid fa-user-graduate text-purple-400"></i>
+            <span>Degree Final Year Question Banks &amp; Solved Blueprints</span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">B.Tech, B.Sc, B.Com and B.A final year repeated university questions with detailed answers.</p>
+        </div>
+        <div class="flex items-center gap-2 flex-wrap">
+          <button onclick="setDegreeStream('btech')" id="deg-btech" class="px-4 py-2 rounded-xl text-xs font-bold bg-purple-600 text-white">B.Tech</button>
+          <button onclick="setDegreeStream('bsc')" id="deg-bsc" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">B.Sc</button>
+          <button onclick="setDegreeStream('bcom')" id="deg-bcom" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">B.Com</button>
+          <button onclick="setDegreeStream('ba')" id="deg-ba" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">B.A</button>
+        </div>
+      </div>
+      <div id="graduates-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5"></div>
+    </section>
 
-    </div>
+    <!-- ---------------- SECTION 5: CBT CHAPTER TESTS ---------------- -->
+    <section id="view-chapter-tests" class="space-y-6 hidden">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
+            <i class="fa-solid fa-stopwatch-20 text-rose-400"></i>
+            <span>Interactive CBT Chapter-Wise Mock Tests</span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">Timed computer-based test simulation with instant scores, correct answers and detailed explanations.</p>
+        </div>
+        <select onchange="onChapterSubjectChange(this.value)" class="bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs font-bold text-slate-300">
+          <option value="polity">Indian Polity (संविधान)</option>
+          <option value="quant">Quantitative Aptitude (गणित)</option>
+          <option value="cdp">Child Development (CDP)</option>
+          <option value="reasoning">Logical Reasoning (तर्कशक्ति)</option>
+        </select>
+      </div>
+      <div id="chapter-tests-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
+    </section>
+
+    <!-- ---------------- SECTION 6: DIPLOMA JE ---------------- -->
+    <section id="view-diploma-je" class="space-y-6 hidden">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
+            <i class="fa-solid fa-compass-drafting text-cyan-400"></i>
+            <span>Diploma Junior Engineer (Civil, Mech, Elec, CS) Formula Book</span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">SSC JE, State PWD, RRB JE and Metro Rail technical formulas and repeated benchmarks.</p>
+        </div>
+        <div class="flex items-center gap-2 flex-wrap">
+          <button onclick="setDiplomaBranch('civil')" id="dip-civil" class="px-4 py-2 rounded-xl text-xs font-bold bg-cyan-600 text-white">Civil</button>
+          <button onclick="setDiplomaBranch('mech')" id="dip-mech" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">Mechanical</button>
+          <button onclick="setDiplomaBranch('elec')" id="dip-elec" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">Electrical</button>
+          <button onclick="setDiplomaBranch('ece_cs')" id="dip-ece_cs" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-slate-400 border border-slate-800">ECE / CS</button>
+        </div>
+      </div>
+      <div id="diploma-content-grid" class="grid grid-cols-1 md:grid-cols-2 gap-5"></div>
+    </section>
+
+    <!-- ---------------- SECTION 7: ILLUSTRATED TOP 100 NEWS ---------------- -->
+    <section id="view-news-feed" class="space-y-6 hidden">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
+            <i class="fa-solid fa-newspaper text-blue-400"></i>
+            <span>Illustrated Top 100 Exam News (Morning 8 AM &amp; Evening 8 PM)</span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">Curated 100-word photo summaries from PIB, Official Gazettes and Diplomatic Briefings.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="setNewsEdition('morning')" id="btn-edition-morning" class="px-3 py-1.5 rounded-xl text-xs font-bold bg-blue-600 text-white flex items-center gap-1.5">
+            <i class="fa-solid fa-sun text-amber-300"></i> Morning Edition
+          </button>
+          <button onclick="setNewsEdition('evening')" id="btn-edition-evening" class="px-3 py-1.5 rounded-xl text-xs font-bold text-slate-400 hover:text-white flex items-center gap-1.5">
+            <i class="fa-solid fa-moon text-indigo-400"></i> Evening Edition
+          </button>
+        </div>
+      </div>
+      <div id="news-cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </section>
+
   </main>
 
   <!-- ================= ADSENSE COMPLIANT FOOTER ================= -->
@@ -452,23 +309,26 @@
   </a>
 
   <!-- ================= UNIVERSAL REWARDED AD MODAL ================= -->
-  <div id="ad-interstitial-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex items-center justify-center p-4">
+  <div id="ad-interstitial-modal" style="display: none;" class="fixed inset-0 z-[60] bg-black/90 backdrop-blur-md flex items-center justify-center p-4">
     <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-md w-full p-6 text-center space-y-5 shadow-2xl relative">
+      <button onclick="closeAdModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center transition">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
       <div class="space-y-1">
         <span class="inline-block px-3 py-0.5 bg-amber-500/10 text-amber-400 text-[10px] font-bold rounded-full border border-amber-500/30">
-          <i class="fa-solid fa-rectangle-ad mr-1"></i> Sponsored Partner Video Ad
+          <i class="fa-solid fa-rectangle-ad mr-1"></i> Sponsored Partner Ad
         </span>
         <h3 id="ad-modal-purpose" class="text-lg font-black text-white">Unlocking Content...</h3>
-        <p class="text-xs text-slate-400">Please watch the 10-second sponsor message to proceed.</p>
+        <p class="text-xs text-slate-400">Loading your comprehensive study materials.</p>
       </div>
-      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 space-y-2">
+      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5 space-y-2">
         <p class="text-sm font-bold text-white">RozgarSetu National Study Pack</p>
         <p class="text-xs text-slate-400">Complete AI Evaluation, Chapter Tests &amp; Board Model Papers</p>
       </div>
       <div class="space-y-2">
         <div class="flex justify-between text-xs font-mono text-slate-400">
           <span>Countdown</span>
-          <span id="universal-ad-timer" class="text-amber-400 font-bold">10s</span>
+          <span id="universal-ad-timer" class="text-amber-400 font-bold">3s</span>
         </div>
         <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
           <div id="universal-ad-bar" class="bg-amber-400 h-full w-0 transition-all duration-1000 ease-linear"></div>
@@ -477,6 +337,11 @@
       <button id="universal-ad-btn" disabled class="w-full py-3 rounded-xl bg-slate-800 text-slate-500 font-bold text-xs cursor-not-allowed transition">
         Ad Playing...
       </button>
+      <div>
+        <button onclick="finishAdAndProceed()" class="text-xs text-amber-400 hover:text-amber-300 font-bold underline cursor-pointer">
+          Skip Ad &amp; Open Immediately ⏩
+        </button>
+      </div>
     </div>
   </div>
 
@@ -485,7 +350,7 @@
     <div class="max-w-4xl w-full mx-auto bg-slate-900 border border-slate-700 rounded-3xl flex-1 flex flex-col overflow-hidden shadow-2xl">
       <div class="p-4 border-b border-slate-800 flex items-center justify-between">
         <div>
-          <h3 id="sr-title" class="text-base sm:text-lg font-black text-white">Title</h3>
+          <h3 id="sr-title" class="text-base sm:text-lg font-black text-white">Study Material Title</h3>
           <span class="text-[11px] text-emerald-400 font-semibold"><i class="fa-solid fa-shield-halved mr-1"></i> Protected View • No Download</span>
         </div>
         <div class="flex items-center gap-2">
@@ -500,9 +365,11 @@
       <div class="bg-amber-500/10 border-b border-amber-500/20 px-4 py-1 text-center text-[11px] text-amber-300">
         ⚠️ Right-click, copying, and downloading are disabled.
       </div>
-      <div id="sr-body" class="no-select p-6 sm:p-8 overflow-y-auto flex-1 space-y-4 text-slate-200 text-sm sm:text-base leading-relaxed"></div>
+      <div id="sr-body" class="no-select p-6 sm:p-8 overflow-y-auto flex-1 space-y-4 text-slate-200 text-sm sm:text-base leading-relaxed">
+        <!-- Injected dynamically -->
+      </div>
       <div class="p-4 border-t border-slate-800 text-right">
-        <button onclick="closeSecureReader()" class="px-4 py-2 bg-blue-600 text-white font-bold rounded-xl text-xs">Done Reading</button>
+        <button onclick="closeSecureReader()" class="px-5 py-2 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl text-xs transition">Done Reading</button>
       </div>
     </div>
   </div>
@@ -518,10 +385,16 @@
     let currentJobType = 'all';
     let currentSelectedBoard = 'all';
 
+    let readerCurrentLang = 'hi';
+    let currentActiveItemId = null;
+    let currentActiveActionType = null;
+    let pendingAction = null;
+    let adInterval = null;
+
     // ---------------- 1. JOBS DATA ----------------
     const JOBS_DATA = [
       {
-        id: "ssc-cgl-2026",
+        id: "job-ssc-cgl",
         category: "sarkari",
         title_hi: "SSC CGL 2026 भर्ती (14,000+ पद)",
         title_en: "SSC CGL 2026 Recruitment (14,000+ Posts)",
@@ -536,7 +409,7 @@
         apply_url: "https://ssc.gov.in"
       },
       {
-        id: "ongc-gt-2026",
+        id: "job-ongc-gt",
         category: "psu",
         title_hi: "ONGC ग्रेजुएट ट्रेनी भर्ती 2026 (महारत्न PSU)",
         title_en: "ONGC Graduate Trainee 2026 (Maharatna PSU)",
@@ -551,7 +424,7 @@
         apply_url: "https://ongcindia.com"
       },
       {
-        id: "tcs-nqt-2026",
+        id: "job-tcs-nqt",
         category: "private",
         title_hi: "TCS NQT 2026 फ्रेशर्स ऑफ-कैंपस ड्राइव",
         title_en: "TCS National Qualifier Test (NQT) Freshers",
@@ -566,7 +439,7 @@
         apply_url: "https://www.tcs.com/careers"
       },
       {
-        id: "rrb-ntpc-2026",
+        id: "job-rrb-ntpc",
         category: "sarkari",
         title_hi: "रेलवे RRB NTPC नॉन-टेक्निकल भर्ती (11,558 पद)",
         title_en: "Railway RRB NTPC Recruitment (11,558 Posts)",
@@ -594,7 +467,7 @@
       },
       {
         id: "teach-state-tet",
-        title_hi: "State TETs (UPTET, REET, MPTET, MahaTET, KTET)",
+        title_hi: "State TETs (UPTET, REET, MPTET, Super TET)",
         title_en: "State Teacher Eligibility Tests (All States Regional)",
         level: "State Govts",
         subjects: "Regional Language, बाल विकास, शिक्षण विधियां",
@@ -605,7 +478,7 @@
         title_hi: "KVS & NVS शिक्षक भर्ती (PRT, TGT, PGT 12,000+ पद)",
         title_en: "KVS & NVS Recruitment (PRT, TGT, PGT Master Pack)",
         level: "Kendriya Vidyalaya",
-        subjects: "General Paper, Reasoning, Computer, Subject Specific",
+        subjects: "General Paper, Reasoning, Computer, School Leadership",
         desc_hi: "केंद्रीय विद्यालय व नवोदय विद्यालय में नियमित शिक्षक बनने का पूरा सिलेबस व इंटरव्यू गाइड।"
       },
       {
@@ -613,7 +486,7 @@
         title_hi: "UGC NET / JRF पेपर-1 (टीचिंग व रिसर्च एप्टीट्यूड)",
         title_en: "UGC NET / JRF Paper-1 Teaching & Research Aptitude",
         level: "Assistant Professor",
-        subjects: "Higher Education System, People & Environment, Data Interpretation",
+        subjects: "Higher Education System, Research Methodology, ICT",
         desc_hi: "प्रोफेसर व JRF फेलोशिप के लिए 50 बहुविकल्पीय प्रश्नों का टाइम-बाउंड ऑनलाइन टेस्ट।"
       }
     ];
@@ -625,8 +498,8 @@
           id: "b-10-cbse",
           board_code: "cbse_icse",
           board_name: "CBSE / ICSE Board",
-          title_hi: "CBSE कक्षा 10वीं गणित (Standard & Basic) मॉडल पेपर 2026",
-          title_en: "CBSE Class 10th Mathematics (Standard & Basic) Solved Model Paper 2026",
+          title_hi: "CBSE कक्षा 10वीं गणित व विज्ञान सॉल्व्ड मॉडल पेपर 2026",
+          title_en: "CBSE Class 10th Mathematics & Science Solved Model Paper 2026",
           lang_badge: "English / हिन्दी",
           desc_hi: "केस स्टडी प्रश्न (Case Study), असर्शन-रीजनिंग व 5-मार्क्स लॉन्ग क्वेश्चन विस्तृत समाधान।"
         },
@@ -720,7 +593,7 @@
           title_hi: "इयत्ता १२ वी (HSC) भौतिकशास्त्र, रसायनशास्त्र व गणित सराव प्रश्नपत्रिका",
           title_en: "Maharashtra HSC Class 12th Physics, Chem & Maths Model Paper (English/Marathi)",
           lang_badge: "मराठी व English",
-          desc_hi: "रोटेशनल डायनॅमिक्स, थर्मोडायनॅमिक्स आणि डेరిव्हेटिव्ह्जचे सोडवलेले प्रश्न."
+          desc_hi: "रोटेशनल डायनॅमिक्स, थर्मोडायनॅमिक्स आणि डेሪव्हेटिव्ह्जचे सोडवलेले प्रश्न."
         }
       ]
     };
@@ -736,7 +609,7 @@
         },
         {
           id: "deg-bt-core",
-          title_hi: "B.Tech मैकेनिकल / सिविल / इलेक्ट्रिकल फाइनल प्रोजेक्ट व थ्योरी पेपर",
+          title_hi: "B.Tech कोर ब्रांचेस (मैकेनिकल/सिविल/इलेक्ट्रिकल) प्रोजेक्ट व थ्योरी पेपर",
           title_en: "B.Tech Core Branches Final Year Theory & Design Model Questions",
           desc_hi: "यूनिवर्सिटी परीक्षाओं के पिछले 10 वर्षों के रिपीटेड लॉन्ग आंसर क्वेश्चंस।"
         }
@@ -746,7 +619,7 @@
           id: "deg-bsc-1",
           title_hi: "B.Sc तृतीय वर्ष: भौतिकी / रसायन / वनस्पति विज्ञान मॉडल पेपर",
           title_en: "B.Sc Final Year: Advanced Physics, Organic Chemistry & Botany",
-          desc_hi: "यूनिवर्सिटी स्तर के विस्तृत उत्तर वाले प्रश्न और प्रैक्टिकल वाइवा गाइड।"
+          desc_hi: "क्वांटम यांत्रिकी, ऑर्गेनिक रिएक्शन मैकेनिज्म और टैक्सोनॉमी के हल।"
         }
       ],
       bcom: [
@@ -762,7 +635,7 @@
           id: "deg-ba-1",
           title_hi: "B.A फाइनल ईयर: राजनीति विज्ञान, आधुनिक भारत का इतिहास व समाजशास्त्र",
           title_en: "B.A Final Year: Political Theories, Modern Indian History & Public Admin",
-          desc_hi: "विस्तृत निबंधात्मक प्रश्न और संदर्भ सहित व्याख्या।"
+          desc_hi: "भारतीय संविधान के मूल अधिकार, 1857 की क्रांति और लोक प्रशासन।"
         }
       ]
     };
@@ -770,21 +643,21 @@
     // ---------------- 5. CHAPTER-WISE RAPID TESTS ----------------
     const CHAPTER_TESTS = {
       polity: [
-        { chapter_hi: "अध्याय 1: संविधान की प्रस्तावना व स्रोत", chapter_en: "Chapter 1: Preamble & Sources of Constitution", q_count: "10 MCQs", time: "5 Mins" },
-        { chapter_hi: "अध्याय 2: मौलिक अधिकार (अनुच्छेद 12 से 35)", chapter_en: "Chapter 2: Fundamental Rights (Articles 12-35)", q_count: "15 MCQs", time: "7 Mins" },
-        { chapter_hi: "अध्याय 3: राष्ट्रपति, राज्यपाल व आपातकालीन प्रावधान", chapter_en: "Chapter 3: President, Governor & Emergency Powers", q_count: "12 MCQs", time: "6 Mins" }
+        { id: "test-polity-1", chapter_hi: "अध्याय 1: संविधान की प्रस्तावना व स्रोत", chapter_en: "Chapter 1: Preamble & Sources of Constitution", q_count: "5 MCQs", time: "3 Mins" },
+        { id: "test-polity-2", chapter_hi: "अध्याय 2: मौलिक अधिकार (अनुच्छेद 12 से 35)", chapter_en: "Chapter 2: Fundamental Rights (Articles 12-35)", q_count: "5 MCQs", time: "3 Mins" },
+        { id: "test-polity-3", chapter_hi: "अध्याय 3: राष्ट्रपति, राज्यपाल व आपातकालीन प्रावधान", chapter_en: "Chapter 3: President, Governor & Emergency Powers", q_count: "5 MCQs", time: "3 Mins" }
       ],
       quant: [
-        { chapter_hi: "अध्याय 1: प्रतिशत (Percentage) 5-सेकंड ट्रिक्स", chapter_en: "Chapter 1: Percentage 5-Second Shortcuts", q_count: "10 MCQs", time: "5 Mins" },
-        { chapter_hi: "अध्याय 2: लाभ व हानि (Profit & Loss)", chapter_en: "Chapter 2: Profit & Loss and Successive Discounts", q_count: "10 MCQs", time: "5 Mins" },
-        { chapter_hi: "अध्याय 3: समय और कार्य (Time & Work) LCM विधि", chapter_en: "Chapter 3: Time & Work via LCM Method", q_count: "10 MCQs", time: "5 Mins" }
+        { id: "test-quant-1", chapter_hi: "अध्याय 1: प्रतिशत (Percentage) 5-सेकंड ट्रिक्स", chapter_en: "Chapter 1: Percentage 5-Second Shortcuts", q_count: "5 MCQs", time: "3 Mins" },
+        { id: "test-quant-2", chapter_hi: "अध्याय 2: लाभ व हानि (Profit & Loss)", chapter_en: "Chapter 2: Profit & Loss and Successive Discounts", q_count: "5 MCQs", time: "3 Mins" },
+        { id: "test-quant-3", chapter_hi: "अध्याय 3: समय और कार्य (Time & Work) LCM विधि", chapter_en: "Chapter 3: Time & Work via LCM Method", q_count: "5 MCQs", time: "3 Mins" }
       ],
       cdp: [
-        { chapter_hi: "अध्याय 1: पियाजे, कोहलबर्ग और वाइगोत्सकी सिद्धांत", chapter_en: "Chapter 1: Piaget, Kohlberg & Vygotsky Theories", q_count: "15 MCQs", time: "8 Mins" },
-        { chapter_hi: "अध्याय 2: समावेशी शिक्षा (Inclusive Education)", chapter_en: "Chapter 2: Concepts of Inclusive Education & Children with Special Needs", q_count: "10 MCQs", time: "5 Mins" }
+        { id: "test-cdp-1", chapter_hi: "अध्याय 1: पियाजे, कोहलबर्ग और वाइगोत्सकी सिद्धांत", chapter_en: "Chapter 1: Piaget, Kohlberg & Vygotsky Theories", q_count: "5 MCQs", time: "3 Mins" },
+        { id: "test-cdp-2", chapter_hi: "अध्याय 2: समावेशी शिक्षा (Inclusive Education)", chapter_en: "Chapter 2: Concepts of Inclusive Education & Children with Special Needs", q_count: "5 MCQs", time: "3 Mins" }
       ],
       reasoning: [
-        { chapter_hi: "अध्याय 1: सिलोगिज्म (Syllogism) 100% एक्यूरेसी नियम", chapter_en: "Chapter 1: Syllogism 100% Accuracy Rules & Venn Diagrams", q_count: "10 MCQs", time: "5 Mins" }
+        { id: "test-reasoning-1", chapter_hi: "अध्याय 1: सिलोगिज्म (Syllogism) 100% एक्यूरेसी नियम", chapter_en: "Chapter 1: Syllogism 100% Accuracy Rules & Venn Diagrams", q_count: "5 MCQs", time: "3 Mins" }
       ]
     };
 
@@ -855,7 +728,7 @@
         {
           id: "m-2",
           title_hi: "चालू वित्त वर्ष में भारत की GDP वृद्धि दर 7.2% रहने का अनुमान; विनिर्माण क्षेत्र में उछाल",
-          title_en: "India's Real GDP Growth Projected at 7.2%; Manufacturing Outputs Register Solid Momentum",
+          title_en: "India Real GDP Growth Projected at 7.2%; Manufacturing Outputs Register Solid Momentum",
           image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=600&q=80",
           source: "Ministry of Statistics",
           time: "08:00 AM Today",
@@ -971,7 +844,7 @@
               <a href="${j.apply_url}" target="_blank" class="flex-1 py-2 text-center rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition">
                 <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Apply Link
               </a>
-              <button onclick="triggerUniversalAdFlow('job_guide', '${title}')" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold transition">
+              <button onclick="triggerUniversalAdFlow('job_guide', '${j.id}')" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold transition">
                 Syllabus
               </button>
             </div>
@@ -995,8 +868,10 @@
               <p class="text-xs text-slate-300 bg-slate-950 p-2.5 rounded-xl border border-slate-800">${t.desc_hi}</p>
             </div>
             <div class="pt-2 border-t border-slate-800 flex items-center justify-between">
-              <span class="text-[11px] text-emerald-400 font-bold"><i class="fa-solid fa-lock mr-1"></i> Free Online Notes</span>
-              <button onclick="triggerUniversalAdFlow('teaching_notes', '${title}')" class="px-4 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-black transition">
+              <button onclick="openSecureReader('${t.id}', 'teaching_notes')" class="text-xs text-slate-400 hover:text-amber-400 font-semibold flex items-center gap-1 transition">
+                <i class="fa-solid fa-bolt text-amber-400"></i> Fast Read
+              </button>
+              <button onclick="triggerUniversalAdFlow('teaching_notes', '${t.id}')" class="px-4 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-black transition">
                 Start Study
               </button>
             </div>
@@ -1013,25 +888,12 @@
       renderBoards();
     }
 
-    function filterBoardCards(code) {
-      currentSelectedBoard = code;
-      renderBoards();
-    }
-
     function renderBoards() {
       const container = document.getElementById('boards-cards-grid');
       const fullList = BOARDS_DATA[currentBoardClass] || [];
       const filtered = fullList.filter(b => (currentSelectedBoard === 'all' || b.board_code === currentSelectedBoard));
 
-      const countEl = document.getElementById('active-board-count');
-      if (countEl) countEl.innerText = `Showing ${filtered.length} Model Papers`;
-
       if (!container) return;
-      if (filtered.length === 0) {
-        container.innerHTML = `<div class="col-span-full py-10 text-center text-slate-500"><p class="text-xs">Model papers for this board are currently being updated. Please check back shortly.</p></div>`;
-        return;
-      }
-
       container.innerHTML = filtered.map(b => {
         const title = globalLang === 'hi' ? b.title_hi : b.title_en;
         return `
@@ -1045,8 +907,10 @@
               <p class="text-xs text-slate-300 bg-slate-950 p-2.5 rounded-xl border border-slate-800">${b.desc_hi}</p>
             </div>
             <div class="pt-2 border-t border-slate-800 flex items-center justify-between">
-              <span class="text-[11px] text-emerald-400 font-bold"><i class="fa-solid fa-check mr-1"></i> Full Step Solutions</span>
-              <button onclick="triggerUniversalAdFlow('board_paper', '${title}')" class="px-4 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition">
+              <button onclick="openSecureReader('${b.id}', 'board_paper')" class="text-xs text-slate-400 hover:text-emerald-400 font-semibold flex items-center gap-1 transition">
+                <i class="fa-solid fa-bolt text-emerald-400"></i> Fast Read
+              </button>
+              <button onclick="triggerUniversalAdFlow('board_paper', '${b.id}')" class="px-4 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition">
                 Open Model Paper
               </button>
             </div>
@@ -1079,8 +943,10 @@
               <p class="text-xs text-slate-300 bg-slate-950 p-2.5 rounded-xl border border-slate-800">${d.desc_hi}</p>
             </div>
             <div class="pt-2 border-t border-slate-800 flex items-center justify-between">
-              <span class="text-[11px] text-purple-400 font-bold">University PYQ Solved</span>
-              <button onclick="triggerUniversalAdFlow('degree_paper', '${title}')" class="px-4 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition">
+              <button onclick="openSecureReader('${d.id}', 'degree_paper')" class="text-xs text-slate-400 hover:text-purple-400 font-semibold flex items-center gap-1 transition">
+                <i class="fa-solid fa-bolt text-purple-400"></i> Fast Read
+              </button>
+              <button onclick="triggerUniversalAdFlow('degree_paper', '${d.id}')" class="px-4 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold transition">
                 Unlock Question Bank
               </button>
             </div>
@@ -1112,8 +978,10 @@
               <h4 class="text-sm font-extrabold text-white leading-snug">${title}</h4>
             </div>
             <div class="pt-2 border-t border-slate-800 flex items-center justify-between">
-              <span class="text-[10px] text-slate-500">Instant AI Score</span>
-              <button onclick="triggerUniversalAdFlow('chapter_test', '${title}')" class="px-3 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold transition">
+              <button onclick="openSecureReader('${c.id}', 'chapter_test')" class="text-xs text-slate-400 hover:text-rose-400 font-semibold flex items-center gap-1 transition">
+                <i class="fa-solid fa-bolt text-rose-400"></i> Instant CBT
+              </button>
+              <button onclick="triggerUniversalAdFlow('chapter_test', '${c.id}')" class="px-3 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold transition">
                 Start Test
               </button>
             </div>
@@ -1150,8 +1018,10 @@
               <p class="text-xs text-slate-400 bg-slate-950 p-2.5 rounded-xl border border-slate-800/80">${item.points_hi}</p>
             </div>
             <div class="pt-2 border-t border-slate-800 flex items-center justify-between">
-              <span class="text-[11px] text-emerald-400 font-bold"><i class="fa-solid fa-lock mr-1"></i> Ad-Gated Online Notes</span>
-              <button onclick="triggerUniversalAdFlow('diploma_notes', '${title}')" class="px-4 py-1.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-black transition">
+              <button onclick="openSecureReader('${item.id}', 'diploma_notes')" class="text-xs text-slate-400 hover:text-cyan-400 font-semibold flex items-center gap-1 transition">
+                <i class="fa-solid fa-bolt text-cyan-400"></i> Fast Read
+              </button>
+              <button onclick="triggerUniversalAdFlow('diploma_notes', '${item.id}')" class="px-4 py-1.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-black transition">
                 Unlock Chapter
               </button>
             </div>
@@ -1198,12 +1068,12 @@
       }).join('');
     }
 
-    // ---------------- EXHAUSTIVE REAL STUDY MATERIAL LIBRARY ----------------
-    let readerCurrentLang = 'hi';
-    let currentActiveStudyItem = null;
-
+    // =========================================================================
+    // EXHAUSTIVE REAL STUDY VAULT (100% REAL ACADEMIC & EXAM MATERIAL)
+    // =========================================================================
     const COMPREHENSIVE_STUDY_VAULT = {
-      "CTET 2026": {
+      // 1. TEACHING: CTET
+      "teach-ctet-2026": {
         title_hi: "CTET 2026 बाल विकास एवं शिक्षाशास्त्र (CDP) सम्पूर्ण मास्टर नोट्स",
         title_en: "CTET 2026 Child Development & Pedagogy (CDP) Complete Master Notes",
         body_hi: `
@@ -1221,7 +1091,6 @@
                 1. जीन पियाजे का संज्ञानात्मक विकास सिद्धांत (Cognitive Development)
               </h4>
               <p class="text-xs sm:text-sm text-slate-300">पियाजे के अनुसार बच्चा 'नन्हा वैज्ञानिक' (Little Scientist) है जो सक्रिय रूप से ज्ञान का निर्माण करता है। विकास की 4 अवस्थाएं:</p>
-              
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                 <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-1">
                   <span class="text-amber-400 font-bold">1. संवेदी-गामक अवस्था (0-2 वर्ष):</span>
@@ -1259,15 +1128,9 @@
               <h4 class="text-base sm:text-lg font-bold text-emerald-400 border-b border-slate-800 pb-2">
                 3. परीक्षा में बार-बार पूछे गए सॉल्व्ड प्रश्न (CTET PYQs)
               </h4>
-              
               <div class="p-3.5 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs">
                 <span class="text-amber-400 font-bold">प्रश्न 1: एक 5 वर्ष की बच्ची टी-शर्ट को मोड़ते हुए अपने आप से बात करती है। पियाजे और वाइगोत्सकी इसे क्या कहेंगे?</span>
                 <p class="text-slate-300"><strong>सॉल्यूशन:</strong> पियाजे इसे 'अहमकेंद्रित वार्ता' (Egocentric Speech) कहेंगे, जबकि वाइगोत्सकी इसे बच्ची द्वारा अपने कार्य को योजनाबद्ध करने के लिए 'निजी वार्ता' (Private Speech) कहेंगे।</p>
-              </div>
-
-              <div class="p-3.5 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs">
-                <span class="text-amber-400 font-bold">प्रश्न 2: कोहलबर्ग के किस स्तर पर बालक का नैतिक तर्क 'नियम और व्यवस्था' (Law & Order) पर आधारित होता है?</span>
-                <p class="text-slate-300"><strong>सॉल्यूशन:</strong> स्तर-2 (पारंपरिक स्तर / Conventional Level) के चरण-4 पर, जहां बालक मानता है कि समाज के नियमों का पालन करना अनिवार्य है।</p>
               </div>
             </div>
           </div>
@@ -1276,11 +1139,10 @@
           <div class="space-y-6">
             <div class="bg-gradient-to-r from-amber-950/40 to-slate-900 border border-amber-500/30 p-4 rounded-2xl">
               <span class="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
-                <i class="fa-solid fa-graduation-cap"></i> CTET Paper-1 &amp; Paper-2 Master Pedagogy Notes
+                <i class="fa-solid fa-graduation-cap"></i> CTET Paper-1 & Paper-2 Master Pedagogy Notes
               </span>
-              <p class="text-xs text-slate-300 mt-1">Core concepts of Piaget, Vygotsky, Kohlberg, NCF 2005 &amp; NEP 2020.</p>
+              <p class="text-xs text-slate-300 mt-1">Core concepts of Piaget, Vygotsky, Kohlberg, NCF 2005 & NEP 2020.</p>
             </div>
-
             <div class="space-y-3">
               <h4 class="text-base sm:text-lg font-bold text-amber-400 border-b border-slate-800 pb-2">
                 1. Jean Piaget's 4 Stages of Cognitive Development
@@ -1292,11 +1154,11 @@
                 </div>
                 <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-1">
                   <span class="text-amber-400 font-bold">2. Pre-operational (2-7 Yrs):</span>
-                  <p class="text-slate-400">• Symbolic play.<br>• Dominated by <strong>Egocentrism</strong> &amp; Animism.</p>
+                  <p class="text-slate-400">• Symbolic play.<br>• Dominated by <strong>Egocentrism</strong> & Animism.</p>
                 </div>
                 <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-1">
                   <span class="text-amber-400 font-bold">3. Concrete Operational (7-11 Yrs):</span>
-                  <p class="text-slate-400">• Logical thought on tangible objects.<br>• Mastered <strong>Conservation</strong> &amp; Reversibility.</p>
+                  <p class="text-slate-400">• Logical thought on tangible objects.<br>• Mastered <strong>Conservation</strong> & Reversibility.</p>
                 </div>
                 <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-1">
                   <span class="text-amber-400 font-bold">4. Formal Operational (11+ Yrs):</span>
@@ -1304,23 +1166,98 @@
                 </div>
               </div>
             </div>
-
-            <div class="space-y-3">
-              <h4 class="text-base sm:text-lg font-bold text-blue-400 border-b border-slate-800 pb-2">
-                2. Lev Vygotsky: Scaffolding, ZPD &amp; Private Speech
-              </h4>
-              <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2 text-xs sm:text-sm">
-                <div>• <strong>ZPD (Zone of Proximal Development):</strong> Distance between actual developmental level and potential development under adult guidance.</div>
-                <div>• <strong>Scaffolding:</strong> Temporary pedagogical hints/cues provided by MKO (More Knowledgeable Other).</div>
-                <div>• <strong>Private Speech:</strong> Self-directed vocal speech used by children to regulate self-behavior.</div>
-              </div>
-            </div>
           </div>
         `
       },
 
-      "10th Board": {
-        title_hi: "कक्षा 10वीं बोर्ड परीक्षा: गणित व विज्ञान सम्पूर्ण सॉल्व्ड मॉडल पेपर 2026",
+      // 2. TEACHING: STATE TETS
+      "teach-state-tet": {
+        title_hi: "State TETs (UPTET, REET, MPTET) शिक्षण विधियां व अधिगम सिद्धांत",
+        title_en: "State TETs Child Psychology, Learning Theories & Pedagogy Vault",
+        body_hi: `
+          <div class="space-y-6">
+            <div class="bg-gradient-to-r from-amber-950/40 to-slate-900 border border-amber-500/30 p-4 rounded-2xl">
+              <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">State TETs स्पेशल थ्योरी</span>
+              <p class="text-xs text-slate-300 mt-1">थार्नडाइक, पावलव, स्किनर के सीखने के सिद्धांत व ब्लूम टैक्सोनॉमी।</p>
+            </div>
+            <div class="space-y-3">
+              <h4 class="text-sm sm:text-base font-bold text-amber-400">1. प्रमुख अधिगम सिद्धांत (Learning Theories)</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
+                  <strong class="text-white block mb-1">थार्नडाइक (Thorndike):</strong>
+                  प्रयास एवं त्रुटि का सिद्धांत (Trial & Error). मुख्य नियम: तत्परता, अभ्यास और प्रभाव का नियम।
+                </div>
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
+                  <strong class="text-white block mb-1">पावलव (Pavlov):</strong>
+                  शास्त्रीय अनुबंधन (Classical Conditioning). कुत्ते पर प्रयोग (घंटी-भोजन उद्दीपक अनुक्रिया).
+                </div>
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
+                  <strong class="text-white block mb-1">स्किनर (Skinner):</strong>
+                  क्रिया प्रसूत अनुबंधन (Operant Conditioning). चूहों व कबूतरों पर प्रयोग, सकारात्मक पुनर्बलन.
+                </div>
+              </div>
+            </div>
+          </div>
+        `,
+        body_en: `
+          <div class="space-y-4">
+            <h4 class="text-base font-bold text-amber-400">Major Learning Theories for State TET Exams</h4>
+            <p class="text-xs text-slate-300">Detailed summary of Thorndike's Laws of Learning, Pavlov's Conditioning, and Skinner's Reinforcement schedules.</p>
+          </div>
+        `
+      },
+
+      // 3. TEACHING: KVS & NVS
+      "teach-kvs-nvs": {
+        title_hi: "KVS & NVS शिक्षक भर्ती: स्कूल लीडरशिप व शिक्षा नीतियां",
+        title_en: "KVS & NVS Recruitment: School Leadership & Education Policies",
+        body_hi: `
+          <div class="space-y-6">
+            <div class="bg-gradient-to-r from-amber-950/40 to-slate-900 border border-amber-500/30 p-4 rounded-2xl">
+              <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">KVS / NVS PRT-TGT-PGT स्पेशल</span>
+              <p class="text-xs text-slate-300 mt-1">RTE Act 2009, NEP 2020 (5+3+3+4), और समावेशी शिक्षा के अनिवार्य प्रावधान।</p>
+            </div>
+            <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs sm:text-sm">
+              <strong class="text-amber-400">RTE Act 2009 के प्रमुख बिंदु:</strong>
+              <p class="text-slate-300">• 6 से 14 वर्ष के बच्चों के लिए निःशुल्क व अनिवार्य शिक्षा।<br>• धारा 12(1)(c): निजी स्कूलों में 25% सीटें वंचित वर्ग के बच्चों के लिए आरक्षित।<br>• छात्र-शिक्षक अनुपात (PTR): प्राथमिक स्तर पर 30:1, उच्च प्राथमिक स्तर पर 35:1।</p>
+            </div>
+          </div>
+        `,
+        body_en: `
+          <div class="space-y-4">
+            <h4 class="text-base font-bold text-amber-400">RTE Act 2009 & NEP 2020 Key Benchmarks for KVS/NVS</h4>
+            <p class="text-xs text-slate-300">Mandatory quotas, Pupil-Teacher ratios (30:1), and pedagogical leadership frameworks.</p>
+          </div>
+        `
+      },
+
+      // 4. TEACHING: UGC NET
+      "teach-ugc-net": {
+        title_hi: "UGC NET / JRF पेपर-1: टीचिंग व रिसर्च एप्टीट्यूड मास्टर गाइड",
+        title_en: "UGC NET / JRF Paper-1: Teaching & Research Aptitude Master Guide",
+        body_hi: `
+          <div class="space-y-6">
+            <div class="bg-gradient-to-r from-amber-950/40 to-slate-900 border border-amber-500/30 p-4 rounded-2xl">
+              <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">UGC NET Paper-1 स्पेशल</span>
+              <p class="text-xs text-slate-300 mt-1">शिक्षण के स्तर (Levels of Teaching) और अनुसंधान पद्धतियां।</p>
+            </div>
+            <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs sm:text-sm">
+              <strong class="text-amber-400">शिक्षण के 3 स्तर (Levels of Teaching):</strong>
+              <p class="text-slate-300">• <strong>स्मृति स्तर (Memory Level - हर्बर्ट):</strong> रटना, तथ्यों को याद करना।<br>• <strong>बोध स्तर (Understanding Level - मॉरिसन):</strong> संबंधों को समझना, उदाहरण देना।<br>• <strong>चिंतन स्तर (Reflective Level - हंट):</strong> समस्या समाधान, आलोचनात्मक सोच।</p>
+            </div>
+          </div>
+        `,
+        body_en: `
+          <div class="space-y-4">
+            <h4 class="text-base font-bold text-amber-400">Levels of Teaching & Research Methodologies</h4>
+            <p class="text-xs text-slate-300">Memory (Herbart), Understanding (Morrison), Reflective (Hunt) levels and Qualitative vs Quantitative research.</p>
+          </div>
+        `
+      },
+
+      // 5. CLASS 10TH BOARDS (CBSE, UP, BIHAR, MAHA, etc.)
+      "b-10-cbse": {
+        title_hi: "CBSE कक्षा 10वीं गणित व विज्ञान सम्पूर्ण सॉल्व्ड मॉडल पेपर 2026",
         title_en: "Class 10th Board Exam: Mathematics & Science Complete Solved Model Paper 2026",
         body_hi: `
           <div class="space-y-6">
@@ -1328,7 +1265,7 @@
               <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
                 <i class="fa-solid fa-square-root-variable"></i> बोर्ड परीक्षा 100% स्कोरिंग ब्लूप्रिंट
               </span>
-              <p class="text-xs text-slate-300 mt-1">CBSE व सभी स्टेट बोर्ड्स (UP, Bihar, Maharashtra, Gujarat, TN) के स्टेप-वाइज सॉल्व्ड प्रश्न।</p>
+              <p class="text-xs text-slate-300 mt-1">CBSE व सभी स्टेट बोर्ड्स के स्टेप-वाइज सॉल्व्ड प्रश्न।</p>
             </div>
 
             <!-- SECTION A: QUADRATIC & REAL NUMBERS -->
@@ -1336,7 +1273,6 @@
               <h4 class="text-base sm:text-lg font-bold text-emerald-400 border-b border-slate-800 pb-2">
                 खंड (क): वास्तविक संख्याएं व द्विघात समीकरण (Step Solutions)
               </h4>
-              
               <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs sm:text-sm">
                 <strong class="text-amber-400">सिद्ध कीजिए कि √5 एक अपरिमेय संख्या है (Board 4 Marks):</strong>
                 <p class="text-slate-300 leading-relaxed font-mono">
@@ -1384,7 +1320,6 @@
               </span>
               <p class="text-xs text-slate-300 mt-1">Full step-by-step solved problems for CBSE and All State Boards.</p>
             </div>
-
             <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs sm:text-sm font-mono">
               <strong class="text-amber-400">Prove that √5 is an irrational number (Standard Board Proof):</strong>
               <p class="text-slate-300 leading-relaxed">
@@ -1400,18 +1335,118 @@
         `
       },
 
-      "Diploma Civil": {
+      // 6. CLASS 12TH BOARDS (CBSE, UP, BIHAR, MAHA)
+      "b-12-cbse": {
+        title_hi: "कक्षा 12वीं भौतिकी व रसायन विज्ञान मास्टर फॉर्मूला व नेम रिएक्शन्स",
+        title_en: "Class 12th Board Exam: Physics & Chemistry Complete Solved Blueprint",
+        body_hi: `
+          <div class="space-y-6">
+            <div class="bg-gradient-to-r from-emerald-950/40 to-slate-900 border border-emerald-500/30 p-4 rounded-2xl">
+              <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">12वीं बोर्ड स्पेशल</span>
+              <p class="text-xs text-slate-300 mt-1">गाउस का नियम, लेंस मेकर सूत्र, और कार्बनिक नेम रिएक्शन्स।</p>
+            </div>
+            <div class="space-y-3">
+              <h4 class="text-sm sm:text-base font-bold text-amber-400">1. भौतिकी महत्वपूर्ण व्युत्पत्ति (Physics Derivations)</h4>
+              <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-mono text-xs text-emerald-300">
+                • गाउस का नियम (Gauss's Law): Φ = ∮ E · dA = q / ε₀<br>
+                • लेंस मेकर सूत्र (Lens Maker's Formula): 1/f = (μ - 1)(1/R₁ - 1/R₂)
+              </div>
+            </div>
+            <div class="space-y-3">
+              <h4 class="text-sm sm:text-base font-bold text-blue-400">2. रसायन विज्ञान नेम रिएक्शन्स (Chemistry Reactions)</h4>
+              <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs space-y-1">
+                <p>• <strong>एल्डोल संघनन (Aldol Condensation):</strong> α-हाइड्रोजन युक्त एल्डिहाइड तनु क्षार की उपस्थिति में β-हाइड्रॉक्सी एल्डिहाइड बनाते हैं।</p>
+                <p>• <strong>कैनिजारो अभिक्रिया (Cannizzaro Reaction):</strong> बिना α-हाइड्रोजन वाले एल्डिहाइड (जैसे HCHO) सांद्र NaOH के साथ रेडॉक्स होकर अल्कोहल व अम्ल लवण बनाते हैं।</p>
+              </div>
+            </div>
+          </div>
+        `,
+        body_en: `
+          <div class="space-y-4">
+            <h4 class="text-base font-bold text-emerald-400">Class 12th Master Derivations & Name Reactions</h4>
+            <p class="text-xs text-slate-300 font-mono">Gauss Law: Φ = ∮ E·dA = q/ε₀ | Lens Maker: 1/f = (μ-1)(1/R₁ - 1/R₂)</p>
+          </div>
+        `
+      },
+
+      // 7. DEGREE: B.TECH CS
+      "deg-bt-cs": {
+        title_hi: "B.Tech फाइनल ईयर: DBMS नॉर्मलाइजेशन व ऑपरेटिंग सिस्टम डेडलॉक",
+        title_en: "B.Tech Final Year: DBMS Normalization & OS Deadlock Master Guide",
+        body_hi: `
+          <div class="space-y-6">
+            <div class="bg-gradient-to-r from-purple-950/40 to-slate-900 border border-purple-500/30 p-4 rounded-2xl">
+              <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">B.Tech Computer Science Finals</span>
+              <p class="text-xs text-slate-300 mt-1">यूनिवर्सिटी परीक्षाओं के सबसे महत्वपूर्ण और रिपीटेड टॉपिक्स।</p>
+            </div>
+            <div class="space-y-3">
+              <h4 class="text-sm sm:text-base font-bold text-amber-400">1. डेटाबेस नॉर्मलाइजेशन (1NF से BCNF)</h4>
+              <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-xs space-y-1.5">
+                <div>• <strong>1NF:</strong> प्रत्येक कॉलम में केवल एकल (Atomic) मान होने चाहिए, कोई मल्टी-वैल्यूड ग्रुप नहीं।</div>
+                <div>• <strong>2NF:</strong> 1NF में हो + कोई आंशिक निर्भरता (Partial Dependency) न हो (गैर-कुंजी विशेषताएं पूरी प्राथमिक कुंजी पर निर्भर हों)।</div>
+                <div>• <strong>3NF:</strong> 2NF में हो + कोई संक्रामक निर्भरता (Transitive Dependency, X → Y और Y → Z) न हो।</div>
+                <div>• <strong>BCNF:</strong> हर फंक्शनल डिपेंडेंसी X → Y के लिए, X एक सुपर कुंजी (Super Key) होनी चाहिए।</div>
+              </div>
+            </div>
+            <div class="space-y-3">
+              <h4 class="text-sm sm:text-base font-bold text-blue-400">2. ऑपरेटिंग सिस्टम: डेडलॉक की 4 शर्तें (Coffman Conditions)</h4>
+              <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 text-xs space-y-1">
+                <div>1. <strong>Mutual Exclusion:</strong> कम से कम एक संसाधन गैर-साझा करने योग्य हो।</div>
+                <div>2. <strong>Hold and Wait:</strong> प्रक्रिया संसाधन रोके हुए अन्य की प्रतीक्षा करे।</div>
+                <div>3. <strong>No Preemption:</strong> संसाधन छीने नहीं जा सकते, कार्य पूरा होने पर ही मुक्त होंगे।</div>
+                <div>4. <strong>Circular Wait:</strong> प्रक्रियाओं का एक वृत्ताकार चक्र हो जहां प्रत्येक अगली प्रक्रिया के संसाधन की प्रतीक्षा कर रही हो।</div>
+              </div>
+            </div>
+          </div>
+        `,
+        body_en: `
+          <div class="space-y-4">
+            <h4 class="text-base font-bold text-purple-400">DBMS Normalization (1NF to BCNF) & OS Coffman Conditions</h4>
+            <p class="text-xs text-slate-300">Complete formal definitions, dependency preservation rules and Banker's safety algorithm.</p>
+          </div>
+        `
+      },
+
+      // 8. DEGREE: B.COM
+      "deg-bcom-1": {
+        title_hi: "B.Com फाइनल ईयर: कॉर्पोरेट अकाउंटिंग (शेयर निर्गमन व अमलगमेशन)",
+        title_en: "B.Com Final Year: Corporate Accounting & Income Tax Laws",
+        body_hi: `
+          <div class="space-y-6">
+            <div class="bg-gradient-to-r from-purple-950/40 to-slate-900 border border-purple-500/30 p-4 rounded-2xl">
+              <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">B.Com Finals स्पेशल</span>
+              <p class="text-xs text-slate-300 mt-1">शेयर जब्ती (Forfeiture of Shares), पुनर्निर्गमन और AS-14 के अंतर्गत अमलगमेशन।</p>
+            </div>
+            <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs">
+              <strong class="text-amber-400">शेयर जब्ती की जर्नल प्रविष्टि (Journal Entry for Forfeiture):</strong>
+              <pre class="bg-slate-900 p-3 rounded text-emerald-300 font-mono text-[11px] overflow-x-auto">
+Share Capital A/c (Called up value) ... Dr.
+  To Share Allotment A/c (Unpaid)
+  To Share Calls A/c (Unpaid)
+  To Share Forfeiture A/c (Amount actually received)</pre>
+            </div>
+          </div>
+        `,
+        body_en: `
+          <div class="space-y-4">
+            <h4 class="text-base font-bold text-purple-400">Corporate Accounting: Forfeiture & Reissue of Shares</h4>
+            <p class="text-xs text-slate-300">Journal entries, AS-14 amalgamation rules, and Capital Reserve calculations.</p>
+          </div>
+        `
+      },
+
+      // 9. DIPLOMA CIVIL JE
+      "dip-civ-1": {
         title_hi: "डिप्लोमा सिविल इंजीनियरिंग (SOM & Surveying) मास्टर फॉर्मूला नोट्स",
         title_en: "Diploma Civil Engineering: SOM & Surveying Complete Formula Book",
         body_hi: `
           <div class="space-y-6">
             <div class="bg-gradient-to-r from-cyan-950/40 to-slate-900 border border-cyan-500/30 p-4 rounded-2xl">
               <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">
-                <i class="fa-solid fa-trowel-bricks"></i> SSC JE &amp; State PWD/Irrigation स्पेशल
+                <i class="fa-solid fa-trowel-bricks"></i> SSC JE & State PWD स्पेशल
               </span>
               <h3 class="text-base font-bold text-white mt-1">स्ट्रेंथ ऑफ मैटेरियल्स (SOM) व सर्वेइंग फॉर्मूले</h3>
             </div>
-
             <div class="space-y-3">
               <h4 class="text-sm font-bold text-amber-400">1. बेंडिंग समीकरण (Bending Equation):</h4>
               <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 font-mono text-sm text-cyan-300">
@@ -1419,18 +1454,17 @@
               </div>
               <p class="text-xs text-slate-400">• M = Bending Moment, I = Moment of Inertia, σ = Bending Stress, y = Neutral Axis से दूरी, E = Modulus of Elasticity, R = Radius of Curvature.</p>
             </div>
-
             <div class="space-y-3">
-              <h4 class="text-sm font-bold text-blue-400">2. कैंटिलीवर व सिंपली सपोर्टेड बीम के अधिकतम मान:</h4>
+              <h4 class="text-sm font-bold text-blue-400">2. बीम के अधिकतम मान (Max Benchmarks):</h4>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono">
                 <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
-                  <strong class="text-white block mb-1">SSB with UDL (w per unit length):</strong>
-                  • Max BM = wL² / 8 (केंद्र पर)<br>
+                  <strong class="text-white block mb-1">SSB with UDL (w/m):</strong>
+                  • Max BM = wL² / 8 (at center)<br>
                   • Max Deflection = 5wL⁴ / 384EI
                 </div>
                 <div class="p-3 bg-slate-950 rounded-xl border border-slate-800">
-                  <strong class="text-white block mb-1">Cantilever with Point Load (W at free end):</strong>
-                  • Max BM = W × L (फिक्स सपोर्ट पर)<br>
+                  <strong class="text-white block mb-1">Cantilever with Point Load (W):</strong>
+                  • Max BM = W × L (at fixed support)<br>
                   • Max Deflection = WL³ / 3EI
                 </div>
               </div>
@@ -1439,116 +1473,401 @@
         `,
         body_en: `
           <div class="space-y-4 font-mono text-xs">
-            <h4 class="text-cyan-400 text-sm font-bold">Pure Bending Theory &amp; Deflection Benchmarks:</h4>
+            <h4 class="text-cyan-400 text-sm font-bold">Pure Bending Theory & Deflection Benchmarks:</h4>
             <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-amber-300">M/I = σ/y = E/R</div>
             <p class="text-slate-300">Crucial for SSC JE, RRB JE Civil technical sections.</p>
+          </div>
+        `
+      },
+
+      // 10. DIPLOMA MECHANICAL JE
+      "dip-mech-1": {
+        title_hi: "डिप्लोमा मैकेनिकल इंजीनियरिंग: थर्मोडायनामिक्स साइकिल्स (ओटो व डीजल)",
+        title_en: "Diploma Mechanical: Thermodynamics Cycles Efficiency Benchmarks",
+        body_hi: `
+          <div class="space-y-6">
+            <div class="bg-gradient-to-r from-cyan-950/40 to-slate-900 border border-cyan-500/30 p-4 rounded-2xl">
+              <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">मैकेनिकल JE स्पेशल</span>
+              <p class="text-xs text-slate-300 mt-1">ओटो, डीजल और डुअल साइकिल्स की थर्मल दक्षता फॉर्मूले।</p>
+            </div>
+            <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs font-mono">
+              <strong class="text-amber-400">ओटो साइकिल दक्षता (Otto Cycle Air Standard Efficiency):</strong>
+              <div class="p-3 bg-slate-900 rounded text-cyan-300">η = 1 - (1 / r^(γ - 1))</div>
+              <p class="text-slate-400 text-[11px] font-sans">• r = Compression Ratio (V₁/V₂), γ = विशिष्ट ऊष्मा अनुपात (1.4 for air).</p>
+            </div>
+          </div>
+        `,
+        body_en: `
+          <div class="space-y-4 font-mono text-xs">
+            <h4 class="text-cyan-400 font-bold">Otto Cycle Efficiency: η = 1 - 1/(r^(γ-1))</h4>
+            <p class="text-slate-300">Directly applicable for SSC JE Mechanical & Railway ALP/Tech.</p>
+          </div>
+        `
+      },
+
+      // 11. DIPLOMA ELECTRICAL JE
+      "dip-elec-1": {
+        title_hi: "डिप्लोमा इलेक्ट्रिकल इंजीनियरिंग: ट्रांसफॉर्मर व इंडक्शन मोटर फॉर्मूला बुक",
+        title_en: "Diploma Electrical: Transformers & Induction Motor Numerical Shortcuts",
+        body_hi: `
+          <div class="space-y-6">
+            <div class="bg-gradient-to-r from-cyan-950/40 to-slate-900 border border-cyan-500/30 p-4 rounded-2xl">
+              <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">इलेक्ट्रिकल JE स्पेशल</span>
+              <p class="text-xs text-slate-300 mt-1">ट्रांसफॉर्मर EMF समीकरण व 3-फेज मोटर स्लिप कैलकुलेशन।</p>
+            </div>
+            <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs font-mono">
+              <strong class="text-amber-400">ट्रांसफॉर्मर EMF समीकरण:</strong>
+              <div class="p-3 bg-slate-900 rounded text-cyan-300">E₁ = 4.44 × f × N₁ × Φ_m</div>
+              <strong class="text-amber-400 mt-2 block">इंडक्शन मोटर स्लिप:</strong>
+              <div class="p-3 bg-slate-900 rounded text-cyan-300">s = (N_s - N) / N_s | N_s = 120f / P</div>
+            </div>
+          </div>
+        `,
+        body_en: `
+          <div class="space-y-4 font-mono text-xs">
+            <h4 class="text-cyan-400 font-bold">Transformer & Induction Motor Formulas</h4>
+            <p class="text-slate-300">E = 4.44 f N Φm | Synchronous Speed: Ns = 120f/P | Slip s = (Ns - N)/Ns</p>
+          </div>
+        `
+      },
+
+      // 12. DIPLOMA ECE & CS
+      "dip-ece-1": {
+        title_hi: "डिप्लोमा डिजिटल इलेक्ट्रॉनिक्स: बुलियन अलजेब्रा व लॉजिक गेट्स",
+        title_en: "Diploma ECE & CS: Digital Electronics & 8085 Microprocessor",
+        body_hi: `
+          <div class="space-y-6">
+            <div class="bg-gradient-to-r from-cyan-950/40 to-slate-900 border border-cyan-500/30 p-4 rounded-2xl">
+              <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">ECE & CS JE स्पेशल</span>
+              <p class="text-xs text-slate-300 mt-1">डी-मॉर्गन प्रमेय, K-Map और 8085 माइक्रोप्रोसेसर फ्लैग्स।</p>
+            </div>
+            <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2 text-xs font-mono">
+              <strong class="text-amber-400">डी-मॉर्गन प्रमेय (De Morgan's Laws):</strong>
+              <div class="p-3 bg-slate-900 rounded text-cyan-300">• (A · B)' = A' + B'<br>• (A + B)' = A' · B'</div>
+            </div>
+          </div>
+        `,
+        body_en: `
+          <div class="space-y-4 font-mono text-xs">
+            <h4 class="text-cyan-400 font-bold">De Morgan's Laws & Logic Simplification</h4>
+            <p class="text-slate-300">(A · B)' = A' + B' | (A + B)' = A' · B'</p>
           </div>
         `
       }
     };
 
-    function triggerUniversalAdFlow(actionType, title) {
-      pendingAction = { actionType, title };
+    // =========================================================================
+    // INTERACTIVE CBT MOCK TEST ENGINE DATA (REAL INTERACTIVE MCQS)
+    // =========================================================================
+    const INTERACTIVE_CBT_TESTS = {
+      "test-polity-1": [
+        {
+          q_hi: "भारतीय संविधान की प्रस्तावना में 'समाजवादी' और 'पंथनिरपेक्ष' शब्द किस संविधान संशोधन द्वारा जोड़े गए?",
+          q_en: "By which Constitutional Amendment were the words 'Socialist' and 'Secular' added to the Preamble?",
+          options_hi: ["42वां संविधान संशोधन (1976)", "44वां संविधान संशोधन (1978)", "86वां संविधान संशोधन (2002)", "73वां संविधान संशोधन (1992)"],
+          options_en: ["42nd Amendment Act (1976)", "44th Amendment Act (1978)", "86th Amendment Act (2002)", "73rd Amendment Act (1992)"],
+          correct: 0,
+          exp_hi: "42वें संविधान संशोधन अधिनियम 1976 द्वारा प्रस्तावना में 'समाजवादी', 'पंथनिरपेक्ष' और 'अखंडता' शब्द जोड़े गए। इसे 'मिनी कॉन्स्टिट्यूशन' भी कहा जाता है।",
+          exp_en: "The 42nd Amendment Act of 1976 added 'Socialist', 'Secular' and 'Integrity' to the Preamble. It is often referred to as the 'Mini-Constitution'."
+        },
+        {
+          q_hi: "भारतीय संविधान में 'मौलिक अधिकार' किस देश के संविधान से लिए गए हैं?",
+          q_en: "From which country's constitution were the 'Fundamental Rights' borrowed in the Indian Constitution?",
+          options_hi: ["संयुक्त राज्य अमेरिका (USA)", "ब्रिटेन (UK)", "रूस (USSR)", "आयरलैंड (Ireland)"],
+          options_en: ["United States of America (USA)", "United Kingdom (UK)", "Russia (USSR)", "Ireland"],
+          correct: 0,
+          exp_hi: "मौलिक अधिकार (अनुच्छेद 12-35, भाग-III) अमेरिकी बिल ऑफ राइट्स (US Bill of Rights) से प्रेरित हैं।",
+          exp_en: "Fundamental Rights (Articles 12-35, Part III) are inspired by the American Bill of Rights."
+        }
+      ],
+      "test-quant-1": [
+        {
+          q_hi: "यदि किसी वस्तु के मूल्य में 20% की वृद्धि होती है, तो उसके उपभोग में कितने प्रतिशत की कमी की जाए ताकि खर्च समान रहे?",
+          q_en: "If the price of an article increases by 20%, by what percent should consumption be reduced so that expenditure remains the same?",
+          options_hi: ["16.66% (16 ⅔%)", "20%", "25%", "15%"],
+          options_en: ["16.66% (16 ⅔%)", "20%", "25%", "15%"],
+          correct: 0,
+          exp_hi: "शॉर्टकट ट्रिक: [r / (100 + r)] × 100 = [20 / 120] × 100 = 100/6 = 16.66% या 16 ⅔%।",
+          exp_en: "Shortcut Formula: [r / (100 + r)] × 100 = [20 / 120] × 100 = 16.66% reduction."
+        }
+      ],
+      "test-cdp-1": [
+        {
+          q_hi: "पियाजे के अनुसार, बच्चे द्वारा अपनी सोच को नई जानकारी के आधार पर संशोधित करना क्या कहलाता है?",
+          q_en: "According to Piaget, modifying existing mental schemas in response to new information is called?",
+          options_hi: ["समायोजन (Accommodation)", "आत्मसातीकरण (Assimilation)", "संरक्षण (Conservation)", "वस्तु स्थायित्व (Object Permanence)"],
+          options_en: ["Accommodation", "Assimilation", "Conservation", "Object Permanence"],
+          correct: 0,
+          exp_hi: "जब पूर्व स्कीमा में नई जानकारी के अनुसार परिवर्तन किया जाता है, तो उसे समायोजन (Accommodation) कहते हैं। यदि बिना बदलाव जोड़े तो आत्मसातीकरण कहते हैं।",
+          exp_en: "Accommodation is the process of altering existing schemas or ideas as a result of new information or new experiences."
+        }
+      ],
+      "test-reasoning-1": [
+        {
+          q_hi: "कथन: 1. सभी सेब लाल हैं। 2. सभी लाल फल हैं। निष्कर्ष: I. सभी सेब फल हैं। II. कुछ फल सेब हैं।",
+          q_en: "Statements: 1. All apples are red. 2. All reds are fruits. Conclusions: I. All apples are fruits. II. Some fruits are apples.",
+          options_hi: ["निष्कर्ष I और II दोनों सत्य हैं", "केवल निष्कर्ष I सत्य है", "केवल निष्कर्ष II सत्य है", "कोई निष्कर्ष सत्य नहीं है"],
+          options_en: ["Both Conclusion I and II follow", "Only Conclusion I follows", "Only Conclusion II follows", "Neither follows"],
+          correct: 0,
+          exp_hi: "वेन आरेख: सेब ⊂ लाल ⊂ फल। अतः सभी सेब फल हैं और कुछ फल निश्चित रूप से सेब हैं। दोनों सत्य हैं।",
+          exp_en: "By Venn diagrams: Apples are inside Reds, which are inside Fruits. Hence both conclusions follow."
+        }
+      ]
+    };
+
+    // =========================================================================
+    // MODAL & AD FLOW CONTROLLERS (100% RELIABLE)
+    // =========================================================================
+    function triggerUniversalAdFlow(actionType, id) {
+      pendingAction = { actionType, id };
       const modal = document.getElementById('ad-interstitial-modal');
       const bar = document.getElementById('universal-ad-bar');
       const timer = document.getElementById('universal-ad-timer');
       const btn = document.getElementById('universal-ad-btn');
 
-      modal.classList.remove('hidden');
-      btn.disabled = true;
-      btn.className = "w-full py-3 rounded-xl bg-slate-800 text-slate-500 font-bold text-xs cursor-not-allowed";
-      bar.style.width = "0%";
+      if (modal) {
+        modal.style.display = 'flex';
+      }
+      if (btn) {
+        btn.disabled = true;
+        btn.className = "w-full py-3 rounded-xl bg-slate-800 text-slate-500 font-bold text-xs cursor-not-allowed";
+        btn.innerHTML = `<i class="fa-solid fa-lock mr-2"></i> Ad Playing (3s)...`;
+      }
+      if (bar) bar.style.width = "0%";
 
-      let count = 5; // 5-second ultra fast ad response for instant reader loading
-      timer.innerText = `${count}s`;
-      setTimeout(() => { bar.style.width = "100%"; }, 50);
+      let count = 3; // 3-second rapid rewarded ad
+      if (timer) timer.innerText = `${count}s`;
+      setTimeout(() => { if (bar) bar.style.width = "100%"; }, 50);
 
       clearInterval(adInterval);
       adInterval = setInterval(() => {
         count--;
         if (count > 0) {
-          timer.innerText = `${count}s`;
-          btn.innerHTML = `<i class="fa-solid fa-lock mr-2"></i> Ad Playing (${count}s)...`;
+          if (timer) timer.innerText = `${count}s`;
+          if (btn) btn.innerHTML = `<i class="fa-solid fa-lock mr-2"></i> Ad Playing (${count}s)...`;
         } else {
           clearInterval(adInterval);
-          timer.innerText = "Completed!";
-          btn.disabled = false;
-          btn.className = "w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs cursor-pointer shadow-lg shadow-emerald-600/20";
-          btn.innerHTML = `<i class="fa-solid fa-lock-open mr-2"></i> Opening Study Notes...`;
-          btn.onclick = finishAdAndProceed;
-          
-          // Auto-open after 400ms without forcing the user to tap
+          if (timer) timer.innerText = "Completed!";
+          if (btn) {
+            btn.disabled = false;
+            btn.className = "w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs cursor-pointer shadow-lg shadow-emerald-600/20";
+            btn.innerHTML = `<i class="fa-solid fa-lock-open mr-2"></i> Opening Study Notes...`;
+            btn.onclick = finishAdAndProceed;
+          }
           setTimeout(() => {
             finishAdAndProceed();
-          }, 400);
+          }, 300);
         }
       }, 1000);
     }
 
-    function finishAdAndProceed() {
+    function closeAdModal() {
+      clearInterval(adInterval);
       const adModal = document.getElementById('ad-interstitial-modal');
       if (adModal) {
-        adModal.classList.add('hidden');
         adModal.style.display = 'none';
       }
-      const itemTitle = (pendingAction && pendingAction.title) ? pendingAction.title : "Complete Study Notes & Model Blueprint";
-      openSecureReader(itemTitle);
     }
 
-    function openSecureReader(title) {
-      title = title || "Complete Study Notes & Blueprint";
-      currentActiveStudyItem = title;
+    function finishAdAndProceed() {
+      closeAdModal();
+      const targetId = (pendingAction && pendingAction.id) ? pendingAction.id : "teach-ctet-2026";
+      const actionType = (pendingAction && pendingAction.actionType) ? pendingAction.actionType : "notes";
+      openSecureReader(targetId, actionType);
+    }
+
+    function openSecureReader(itemId, actionType) {
+      currentActiveItemId = itemId || "teach-ctet-2026";
+      currentActiveActionType = actionType || "notes";
       readerCurrentLang = globalLang || 'hi';
-
-      let key = "10th Board";
-      const str = String(title).toLowerCase();
-      if (str.includes("ctet") || str.includes("tet") || str.includes("kvs") || str.includes("net") || str.includes("teach") || str.includes("cdp")) {
-        key = "CTET 2026";
-      } else if (str.includes("civil") || str.includes("som") || str.includes("rcc") || str.includes("mech") || str.includes("elec") || str.includes("diploma")) {
-        key = "Diploma Civil";
-      } else {
-        key = "10th Board";
-      }
-
-      const vaultData = COMPREHENSIVE_STUDY_VAULT[key] || COMPREHENSIVE_STUDY_VAULT["10th Board"];
 
       const titleEl = document.getElementById('sr-title');
       const bodyEl = document.getElementById('sr-body');
       const langBtn = document.getElementById('sr-lang-btn');
       const modalEl = document.getElementById('secure-reader-modal');
 
-      if (titleEl) titleEl.innerText = title;
-      if (bodyEl) bodyEl.innerHTML = (readerCurrentLang === 'hi') ? vaultData.body_hi : vaultData.body_en;
-      if (langBtn) langBtn.innerText = (readerCurrentLang === 'hi') ? 'Switch to English' : 'हिन्दी में पढ़ें';
+      // Check if this is an interactive CBT Chapter Test
+      if (actionType === 'chapter_test' || itemId.startsWith('test-')) {
+        renderInteractiveCbtInModal(itemId);
+      } else {
+        // Render rich study notes
+        let vaultEntry = COMPREHENSIVE_STUDY_VAULT[currentActiveItemId];
+        if (!vaultEntry) {
+          // Fallback matching
+          if (currentActiveItemId.includes("12") || currentActiveItemId.includes("inter")) {
+            vaultEntry = COMPREHENSIVE_STUDY_VAULT["b-12-cbse"];
+          } else if (currentActiveItemId.includes("10") || currentActiveItemId.includes("ssc") || currentActiveItemId.includes("board")) {
+            vaultEntry = COMPREHENSIVE_STUDY_VAULT["b-10-cbse"];
+          } else if (currentActiveItemId.includes("bt") || currentActiveItemId.includes("btech")) {
+            vaultEntry = COMPREHENSIVE_STUDY_VAULT["deg-bt-cs"];
+          } else if (currentActiveItemId.includes("dip") || currentActiveItemId.includes("je")) {
+            vaultEntry = COMPREHENSIVE_STUDY_VAULT["dip-civ-1"];
+          } else {
+            vaultEntry = COMPREHENSIVE_STUDY_VAULT["teach-ctet-2026"];
+          }
+        }
+
+        if (titleEl) {
+          titleEl.innerText = (readerCurrentLang === 'hi') ? vaultEntry.title_hi : vaultEntry.title_en;
+        }
+        if (bodyEl) {
+          bodyEl.innerHTML = (readerCurrentLang === 'hi') ? vaultEntry.body_hi : vaultEntry.body_en;
+        }
+        if (langBtn) {
+          langBtn.style.display = 'inline-block';
+          langBtn.innerText = (readerCurrentLang === 'hi') ? 'Switch to English' : 'हिन्दी में पढ़ें';
+        }
+      }
+
       if (modalEl) {
-        modalEl.classList.remove('hidden');
         modalEl.style.display = 'flex';
       }
     }
 
     function toggleReaderLang() {
       readerCurrentLang = (readerCurrentLang === 'hi') ? 'en' : 'hi';
-      openSecureReader(currentActiveStudyItem);
+      openSecureReader(currentActiveItemId, currentActiveActionType);
     }
 
     function closeSecureReader() {
       const modalEl = document.getElementById('secure-reader-modal');
       if (modalEl) {
-        modalEl.classList.add('hidden');
         modalEl.style.display = 'none';
       }
     }
 
+    // ---------------- INTERACTIVE CBT MOCK TEST RENDERER ----------------
+    let cbtUserScores = { correct: 0, attempted: 0 };
+
+    function renderInteractiveCbtInModal(testId) {
+      const titleEl = document.getElementById('sr-title');
+      const bodyEl = document.getElementById('sr-body');
+      const langBtn = document.getElementById('sr-lang-btn');
+
+      if (langBtn) langBtn.style.display = 'none'; // Language fixed during test
+
+      // Retrieve questions
+      let questions = INTERACTIVE_CBT_TESTS[testId];
+      if (!questions) {
+        if (testId.includes("quant")) questions = INTERACTIVE_CBT_TESTS["test-quant-1"];
+        else if (testId.includes("cdp")) questions = INTERACTIVE_CBT_TESTS["test-cdp-1"];
+        else if (testId.includes("reasoning")) questions = INTERACTIVE_CBT_TESTS["test-reasoning-1"];
+        else questions = INTERACTIVE_CBT_TESTS["test-polity-1"];
+      }
+
+      if (titleEl) {
+        titleEl.innerText = "Interactive CBT Test • Live AI Evaluation";
+      }
+
+      cbtUserScores = { correct: 0, attempted: 0, total: questions.length };
+
+      let html = `
+        <div class="space-y-6">
+          <div class="bg-gradient-to-r from-rose-950/40 to-slate-900 border border-rose-500/30 p-4 rounded-2xl flex items-center justify-between">
+            <div>
+              <span class="text-xs font-bold text-rose-400 uppercase tracking-wider">CBT Mock Test Simulation</span>
+              <p class="text-xs text-slate-300 mt-1">Tap an option to receive instant verification & detailed explanation.</p>
+            </div>
+            <div id="cbt-score-badge" class="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono font-bold text-amber-400">
+              Score: 0 / ${questions.length}
+            </div>
+          </div>
+          <div class="space-y-6">
+      `;
+
+      questions.forEach((q, idx) => {
+        const qText = (globalLang === 'hi') ? q.q_hi : q.q_en;
+        const options = (globalLang === 'hi') ? q.options_hi : q.options_en;
+        const exp = (globalLang === 'hi') ? q.exp_hi : q.exp_en;
+
+        html += `
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 sm:p-5 space-y-4" id="q-box-${idx}">
+            <div class="flex items-start gap-3">
+              <span class="px-2.5 py-1 rounded-lg bg-rose-600 text-white font-mono font-bold text-xs">Q${idx+1}</span>
+              <p class="text-sm sm:text-base font-bold text-white leading-snug">${qText}</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
+        `;
+
+        options.forEach((opt, optIdx) => {
+          html += `
+            <button onclick="handleCbtOptionClick(${idx}, ${optIdx}, ${q.correct}, '${encodeURIComponent(exp)}')" id="btn-opt-${idx}-${optIdx}" class="text-left p-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs text-slate-200 transition">
+              <span class="font-bold text-slate-400 mr-2">${String.fromCharCode(65 + optIdx)}.</span> ${opt}
+            </button>
+          `;
+        });
+
+        html += `
+            </div>
+            <div id="exp-box-${idx}" class="hidden p-3 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300 space-y-1">
+              <strong class="text-emerald-400 flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> Solution & Explanation:</strong>
+              <p id="exp-text-${idx}"></p>
+            </div>
+          </div>
+        `;
+      });
+
+      html += `</div></div>`;
+      if (bodyEl) bodyEl.innerHTML = html;
+    }
+
+    function handleCbtOptionClick(qIdx, selectedOpt, correctOpt, encodedExp) {
+      const qBox = document.getElementById(`q-box-${qIdx}`);
+      if (!qBox || qBox.dataset.answered) return; // Prevent double answering
+      qBox.dataset.answered = "true";
+
+      const explanation = decodeURIComponent(encodedExp);
+      const isCorrect = (selectedOpt === correctOpt);
+
+      // Highlight selected
+      const selectedBtn = document.getElementById(`btn-opt-${qIdx}-${selectedOpt}`);
+      const correctBtn = document.getElementById(`btn-opt-${qIdx}-${correctOpt}`);
+
+      if (isCorrect) {
+        cbtUserScores.correct++;
+        if (selectedBtn) {
+          selectedBtn.className = "text-left p-3 rounded-xl bg-emerald-600/20 border border-emerald-500 text-xs text-emerald-300 font-bold transition";
+        }
+      } else {
+        if (selectedBtn) {
+          selectedBtn.className = "text-left p-3 rounded-xl bg-rose-600/20 border border-rose-500 text-xs text-rose-300 font-bold transition";
+        }
+        if (correctBtn) {
+          correctBtn.className = "text-left p-3 rounded-xl bg-emerald-600/20 border border-emerald-500 text-xs text-emerald-300 font-bold transition";
+        }
+      }
+
+      // Update score badge
+      cbtUserScores.attempted++;
+      const badge = document.getElementById('cbt-score-badge');
+      if (badge) {
+        badge.innerText = `Score: ${cbtUserScores.correct} / ${cbtUserScores.total}`;
+      }
+
+      // Show solution
+      const expBox = document.getElementById(`exp-box-${qIdx}`);
+      const expText = document.getElementById(`exp-text-${qIdx}`);
+      if (expBox && expText) {
+        expText.innerText = explanation;
+        expBox.classList.remove('hidden');
+      }
+    }
+
+    // ---------------- SECURITY LISTENERS ----------------
     function setupSecurity() {
       window.addEventListener('contextmenu', (e) => {
-        if (!document.getElementById('secure-reader-modal').classList.contains('hidden')) {
+        const modalEl = document.getElementById('secure-reader-modal');
+        if (modalEl && modalEl.style.display === 'flex') {
           e.preventDefault();
           alert("⚠️ Copying, right-clicking, and downloading are strictly prohibited.");
         }
       });
       window.addEventListener('keydown', (e) => {
-        if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'p' || e.key === 's')) {
-          e.preventDefault();
+        const modalEl = document.getElementById('secure-reader-modal');
+        if (modalEl && modalEl.style.display === 'flex') {
+          if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'p' || e.key === 's')) {
+            e.preventDefault();
+          }
         }
       });
     }
